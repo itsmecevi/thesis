@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 2 Data is everywhere | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 2 Data is everywhere | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="itsmecevi/thesis-kpi" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Data is everywhere | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Cevi Herdian, B. Sc">
+
+
+<meta name="date" content="2019-02-22">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="big-data-analytics.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html"><i class="fa fa-check"></i><b>2</b> Data is everywhere</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#big-data-definition"><i class="fa fa-check"></i><b>2.1</b> Big data definition</a></li>
+<li class="chapter" data-level="2.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#t-l-industry-deutsche-bahn"><i class="fa fa-check"></i><b>2.2</b> T &amp; L industry: Deutsche Bahn</a></li>
+<li class="chapter" data-level="2.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#another-industry"><i class="fa fa-check"></i><b>2.3</b> Another industry</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#agriculture"><i class="fa fa-check"></i><b>2.3.1</b> Agriculture</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#automotive"><i class="fa fa-check"></i><b>2.3.2</b> Automotive</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#retail"><i class="fa fa-check"></i><b>2.3.3</b> Retail</a></li>
+<li class="chapter" data-level="2.3.4" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#financial-services"><i class="fa fa-check"></i><b>2.3.4</b> Financial Services</a></li>
+<li class="chapter" data-level="2.3.5" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#healthcare"><i class="fa fa-check"></i><b>2.3.5</b> Healthcare</a></li>
+<li class="chapter" data-level="2.3.6" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#crime-terorism"><i class="fa fa-check"></i><b>2.3.6</b> Crime &amp; Terorism</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="big-data-analytics.html"><a href="big-data-analytics.html"><i class="fa fa-check"></i><b>3</b> Big Data Analytics</a><ul>
+<li class="chapter" data-level="3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#data-analytics-lifecycle"><i class="fa fa-check"></i><b>3.1</b> Data Analytics Lifecycle</a></li>
+<li class="chapter" data-level="3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#analytics-world"><i class="fa fa-check"></i><b>3.2</b> Analytics World</a></li>
+<li class="chapter" data-level="3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#deutsche-bahn-tools"><i class="fa fa-check"></i><b>3.3</b> Deutsche Bahn Tools</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#sap-business-object-web-intelligence"><i class="fa fa-check"></i><b>3.3.1</b> SAP Business Object Web Intelligence</a></li>
+<li class="chapter" data-level="3.3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#open-refine"><i class="fa fa-check"></i><b>3.3.2</b> Open Refine</a></li>
+<li class="chapter" data-level="3.3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#r-programming"><i class="fa fa-check"></i><b>3.3.3</b> R Programming</a></li>
+<li class="chapter" data-level="3.3.4" data-path="big-data-analytics.html"><a href="big-data-analytics.html#rstudio"><i class="fa fa-check"></i><b>3.3.4</b> RStudio</a></li>
+<li class="chapter" data-level="3.3.5" data-path="big-data-analytics.html"><a href="big-data-analytics.html#microsoft-power-bi"><i class="fa fa-check"></i><b>3.3.5</b> Microsoft Power BI</a></li>
+<li class="chapter" data-level="3.3.6" data-path="big-data-analytics.html"><a href="big-data-analytics.html#confluence-software"><i class="fa fa-check"></i><b>3.3.6</b> Confluence (Software)</a></li>
+<li class="chapter" data-level="3.3.7" data-path="big-data-analytics.html"><a href="big-data-analytics.html#github"><i class="fa fa-check"></i><b>3.3.7</b> Github</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="terminology.html"><a href="terminology.html"><i class="fa fa-check"></i><b>4</b> Terminology</a><ul>
+<li class="chapter" data-level="4.1" data-path="terminology.html"><a href="terminology.html#financial-and-business-terms"><i class="fa fa-check"></i><b>4.1</b> Financial and Business Terms</a></li>
+<li class="chapter" data-level="4.2" data-path="terminology.html"><a href="terminology.html#mathematical-terms"><i class="fa fa-check"></i><b>4.2</b> Mathematical Terms</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="terminology.html"><a href="terminology.html#information-technology-terms"><i class="fa fa-check"></i><b>4.2.1</b> Information Technology Terms</a></li>
+<li class="chapter" data-level="4.2.2" data-path="terminology.html"><a href="terminology.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>4.2.2</b> Other examples of reactions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="terminology.html"><a href="terminology.html#physics"><i class="fa fa-check"></i><b>4.3</b> Physics</a></li>
+<li class="chapter" data-level="4.4" data-path="terminology.html"><a href="terminology.html#biology"><i class="fa fa-check"></i><b>4.4</b> Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html"><i class="fa fa-check"></i><b>5</b> KPIs for big data</a><ul>
+<li class="chapter" data-level="5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#financial-perspective"><i class="fa fa-check"></i><b>5.1</b> Financial Perspective</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#operating-cash-flow-ocf"><i class="fa fa-check"></i><b>5.1.1</b> Operating Cash Flow (OCF)</a></li>
+<li class="chapter" data-level="5.1.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-ratio"><i class="fa fa-check"></i><b>5.1.2</b> Current Ratio</a></li>
+<li class="chapter" data-level="5.1.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#ratio-acid-test"><i class="fa fa-check"></i><b>5.1.3</b> Ratio / Acid Test</a></li>
+<li class="chapter" data-level="5.1.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#burn-rate"><i class="fa fa-check"></i><b>5.1.4</b> Burn Rate</a></li>
+<li class="chapter" data-level="5.1.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-profit-margin"><i class="fa fa-check"></i><b>5.1.5</b> Net Profit Margin</a></li>
+<li class="chapter" data-level="5.1.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#working-capital"><i class="fa fa-check"></i><b>5.1.6</b> Working Capital</a></li>
+<li class="chapter" data-level="5.1.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-receivable"><i class="fa fa-check"></i><b>5.1.7</b> Current Accounts Receivable</a></li>
+<li class="chapter" data-level="5.1.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-payable"><i class="fa fa-check"></i><b>5.1.8</b> Current Accounts Payable</a></li>
+<li class="chapter" data-level="5.1.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#inventory-turnover"><i class="fa fa-check"></i><b>5.1.9</b> Inventory Turnover</a></li>
+<li class="chapter" data-level="5.1.10" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#budget-variance"><i class="fa fa-check"></i><b>5.1.10</b> Budget Variance</a></li>
+<li class="chapter" data-level="5.1.11" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales-growth"><i class="fa fa-check"></i><b>5.1.11</b> Sales Growth</a></li>
+<li class="chapter" data-level="5.1.12" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#days-sales-outstanding-dso"><i class="fa fa-check"></i><b>5.1.12</b> Days Sales Outstanding (DSO)</a></li>
+<li class="chapter" data-level="5.1.13" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#payment-error-rate"><i class="fa fa-check"></i><b>5.1.13</b> Payment Error Rate</a></li>
+<li class="chapter" data-level="5.1.14" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list"><i class="fa fa-check"></i><b>5.1.14</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-perspective"><i class="fa fa-check"></i><b>5.2</b> Customer Perspective</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-satisfaction-score-csat"><i class="fa fa-check"></i><b>5.2.1</b> Customer Satisfaction Score (CSAT)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-promoter-score-nps"><i class="fa fa-check"></i><b>5.2.2</b> Net Promoter Score (NPS)</a></li>
+<li class="chapter" data-level="5.2.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#first-response-time"><i class="fa fa-check"></i><b>5.2.3</b> First Response Time</a></li>
+<li class="chapter" data-level="5.2.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-retention-rate"><i class="fa fa-check"></i><b>5.2.4</b> Customer Retention Rate</a></li>
+<li class="chapter" data-level="5.2.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#employee-engagement"><i class="fa fa-check"></i><b>5.2.5</b> Employee Engagement</a></li>
+<li class="chapter" data-level="5.2.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-1"><i class="fa fa-check"></i><b>5.2.6</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#process-perspective"><i class="fa fa-check"></i><b>5.3</b> Process Perspective</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#cost-performance-index-cpi"><i class="fa fa-check"></i><b>5.3.1</b> Cost performance index (CPI)</a></li>
+<li class="chapter" data-level="5.3.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#schedule-performance-index-spi"><i class="fa fa-check"></i><b>5.3.2</b> Schedule Performance Index (SPI)</a></li>
+<li class="chapter" data-level="5.3.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-2"><i class="fa fa-check"></i><b>5.3.3</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resource-and-innovation-perspective"><i class="fa fa-check"></i><b>5.4</b> Human Resource and Innovation Perspective</a></li>
+<li class="chapter" data-level="5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-industry"><i class="fa fa-check"></i><b>5.5</b> By Industry</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#t-l-industry"><i class="fa fa-check"></i><b>5.5.1</b> T &amp; L Industry</a></li>
+<li class="chapter" data-level="5.5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#wholesale-trade"><i class="fa fa-check"></i><b>5.5.2</b> Wholesale Trade</a></li>
+<li class="chapter" data-level="5.5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#utilities-industry"><i class="fa fa-check"></i><b>5.5.3</b> Utilities Industry</a></li>
+<li class="chapter" data-level="5.5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#retail-industry"><i class="fa fa-check"></i><b>5.5.4</b> Retail Industry</a></li>
+<li class="chapter" data-level="5.5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#real-estate-and-rental-and-leasing"><i class="fa fa-check"></i><b>5.5.5</b> Real Estate and Rental and Leasing</a></li>
+<li class="chapter" data-level="5.5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#manufacturing-industry"><i class="fa fa-check"></i><b>5.5.6</b> Manufacturing Industry</a></li>
+<li class="chapter" data-level="5.5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance-and-insurance"><i class="fa fa-check"></i><b>5.5.7</b> Finance and Insurance</a></li>
+<li class="chapter" data-level="5.5.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#construction"><i class="fa fa-check"></i><b>5.5.8</b> Construction</a></li>
+<li class="chapter" data-level="5.5.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#it-industry"><i class="fa fa-check"></i><b>5.5.9</b> IT Industry</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-business-goal"><i class="fa fa-check"></i><b>5.6</b> By Business Goal</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#improve-response-time"><i class="fa fa-check"></i><b>5.6.1</b> Improve response time</a></li>
+<li class="chapter" data-level="5.6.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#increase-profit-margins"><i class="fa fa-check"></i><b>5.6.2</b> Increase profit margins</a></li>
+<li class="chapter" data-level="5.6.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#optimize-campaigns"><i class="fa fa-check"></i><b>5.6.3</b> Optimize campaigns</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-department"><i class="fa fa-check"></i><b>5.7</b> By Department</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales"><i class="fa fa-check"></i><b>5.7.1</b> Sales</a></li>
+<li class="chapter" data-level="5.7.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#marketing"><i class="fa fa-check"></i><b>5.7.2</b> Marketing</a></li>
+<li class="chapter" data-level="5.7.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance"><i class="fa fa-check"></i><b>5.7.3</b> Finance</a></li>
+<li class="chapter" data-level="5.7.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resources"><i class="fa fa-check"></i><b>5.7.4</b> Human Resources</a></li>
+<li class="chapter" data-level="5.7.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#information-technology"><i class="fa fa-check"></i><b>5.7.5</b> Information Technology</a></li>
+<li class="chapter" data-level="5.7.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-service"><i class="fa fa-check"></i><b>5.7.6</b> Customer Service</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html"><i class="fa fa-check"></i><b>6</b> Deutsche Bahn Use Case</a><ul>
+<li class="chapter" data-level="6.1" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#it-spend-analysis-kpi"><i class="fa fa-check"></i><b>6.1</b> IT Spend Analysis KPI</a></li>
+<li class="chapter" data-level="6.2" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#human-resources-kpi"><i class="fa fa-check"></i><b>6.2</b> Human Resources KPI</a></li>
+<li class="chapter" data-level="6.3" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#opportunity-analysis-kpi"><i class="fa fa-check"></i><b>6.3</b> Opportunity Analysis KPI</a></li>
+<li class="chapter" data-level="6.4" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-hr-turnover"><i class="fa fa-check"></i><b>6.4</b> Data Science HR Turnover</a></li>
+<li class="chapter" data-level="6.5" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-sales-prediction"><i class="fa fa-check"></i><b>6.5</b> Data Science Sales Prediction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>7</b> Appendix</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-is-everywhere" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Data is everywhere</h1>
+<p>Do you have smartphone? Off course, this kind of Ask is not relevant in this era. From our Laptop, Tablet, PC or Handphone. This devices creates more data nowadays. Data is more bigger and bigger. The world contains an astronomical amount of data, an amount that grows larger and larger each day. This Big Data has changed the way the world interacts, uncovered breakthroughs in fast all of our life, from ecommerce, medicine, genetic, financial etc.</p>
+<p>The principle of Big Data works that the more you have data about anything or any situation, the more accurately you get new <strong>insights</strong> and make <strong>predictions</strong> about what will happen in the future. Also revealed new ways to understand trends in business and in our daily lives. By comparing more and more data and creating relationships that were previously hidden enable us to learn and make more smarter decisions on targeting business values such as sales, production, or financial situations.</p>
+<blockquote>
+<p>Based on forbes.com only <strong>53%</strong> have big data strategies around the world. The top use case are retail, social analysis, and predictive maintenance.</p>
+</blockquote>
+<p>Key points include the following:</p>
+<ul>
+<li><strong>Reporting, dashboards, advanced visualization end-user “self-service” and data warehousing are the top five technologies and initiatives strategic to business intelligence (Figure 1.1).</strong></li>
+</ul>
+<div class="figure">
+<img src="1.jpg" />
+
+</div>
+<ul>
+<li><strong>53% of companies are using big data analytics today, up from 17% in 2015 with Telecom and Financial Services industries fueling the fastest adoption (Figure 1.2).</strong></li>
+</ul>
+<div class="figure">
+<img src="2.jpg" />
+
+</div>
+<ul>
+<li><strong>Data warehouse optimization is considered the most important big data analytics use case in 2017, followed by customer/social analysis and predictive maintenance (Figure 1.3).</strong></li>
+</ul>
+<div class="figure">
+<img src="3.jpg" />
+
+</div>
+<ul>
+<li><strong>Big data analytics use cases vary significantly by industry with data warehouse optimization dominating Financial Services, Healthcare, and Customer/social analysis is the leading use case in Technology-based companies (Figure 1.4).</strong></li>
+</ul>
+<div class="figure">
+<img src="4.jpg" />
+
+</div>
+<ul>
+<li><strong>Spark, MapReduce, and Yarn are the three most popular software frameworks today (Figure 1.5).</strong></li>
+</ul>
+<div class="figure">
+<img src="5.jpg" />
+
+</div>
+<ul>
+<li><strong>The big data access methods most preferred by respondents include Spark SQL, Hive, HDFS and Amazon S3 (Figure 1.6).</strong></li>
+</ul>
+<div class="figure">
+<img src="6.jpg" />
+
+</div>
+<ul>
+<li><strong>Machine learning continues to gain more industry support and investment plans with Spark Machine Learning Library (MLib) adoption projected to grow by 60% in the next 12 months (Figure 1.7).</strong></li>
+</ul>
+<div class="figure">
+<img src="7.jpg" />
+
+</div>
+<p>The big four (Deloitte, Ernst &amp; Young (EY), KPMG and PricewaterhouseCoopers (PwC)) are the four biggest professional services networks in the world. They did also so many research about this theme. One of the interesting information are in the paper “Gut &amp; gigabytes” from PricewaterhouseCoopers (PwC).</p>
+<p>The point is that executives rely more on experience and advice than data to make business-fefining choices but the data driven cultures could be impact more for decision making.</p>
+<p><strong>The summary of this paper:</strong></p>
+<blockquote>
+<p>Highly data-driven companies are three times more likely to report significant improvement in making big decisions, but only 1 in 3 executives say their organisation is highly data-driven.</p>
+</blockquote>
+<blockquote>
+<p>More big decisions are made opportunistically than deliberately, and big decisions have big impact on future profitability; nearly 1 in 3 executives value those decisions at $1 billion+</p>
+</blockquote>
+<blockquote>
+<p>Many executives sceptical or frustrated by the practical application of data and analytics for big decisions, especially in emerging markets</p>
+</blockquote>
+<p>And the five important issues in this survei are growing the existing business, collaborating with competitors, shrinking the existing business, entering a new industry or starting a new business, and corporate financing.</p>
+<p>The last questions of this introduction are how data analytics can improve your businesses? Below are the answered.</p>
+<ol style="list-style-type: decimal">
+<li>Make data-driven business decisions</li>
+</ol>
+<blockquote>
+<p>Making evidence-based rather than intuition-based decisions</p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Grow your business – discover new opportunities</li>
+</ol>
+<blockquote>
+<p>Quickly identify future markets and the best areas for new investments Boost growth through strategic pricing models and data-driven marketing</p>
+</blockquote>
+<ol start="3" style="list-style-type: decimal">
+<li>Create a more efficient and smarter organization</li>
+</ol>
+<blockquote>
+<p>Predict and anticipate the impacts of economic, market, and regulatory forces on business strategy and results Use automation and advanced statistical software to handle and analyze huge volumes of data</p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li>Manage risk and regulatory</li>
+</ol>
+<blockquote>
+<p>Minimize compliance risks by ensuring the completeness, accuracy, and availability of data sources</p>
+</blockquote>
+<div id="big-data-definition" class="section level2">
+<h2><span class="header-section-number">2.1</span> Big data definition</h2>
+<p>As data becomes more bigger, manipulating of available data to get insights and make business decisions can be a useful. Statistical methods, artificial intelligence, machine learning, and data manipulation are some of new term that every business leaders at every level need to become data literate and be able to understand data and analytical concepts.</p>
+<p>Before going further, what is actually Big data?. Big data term comes from John Mashey in 1990, a computer scientist from Pennsylvania State University. It all starts with the big bang explosion in the amount of data we have created since the rise of the digital era. Side effects of the rise of computers, the Internet and technology that capable of capturing data from the all kind of electronic processing.</p>
+<p>Big Data have 3 defining properties call 3V. This terms introduces by <code>Gartner analyst Doug Laney</code> in a 2001 MetaGroup research publication. He publisched that publication with the title “3D data management: Controlling data volume, variety and velocity”. Also not all data is big data except they have 3 properties. Some others data expert added another 2V, value and veracity, but the main term is always 3V.</p>
+<p><strong>1. Volume:</strong> Volume refers to the huge amounts of data generated each time from all of electronics device such as website, social media, cell phones, cars, credit cards, sensors, photographs, video, etc. Volume is the V most associated with the term of big data because, volume can be incredible exploding big. Below is the explanation of how data growing rapidly from sisense.com (Figure 1.8)</p>
+<div class="figure">
+<img src="8.jpg" />
+
+</div>
+<p>For Example in internet world. Facebook is storing 250 billion images As far back as 2016, Facebook had 2.5 trillion posts. Can you imagine for the others online media such as twitter, blog, instagram and also our searching in google? It is a extreme amount of data. This link show the live statistics of some online area such as facebook, twitter., internet users, etc.</p>
+<p><a href="http://www.internetlivestats.com/" class="uri">http://www.internetlivestats.com/</a></p>
+<p>(Figure 1.9 and Figure 1.10)</p>
+<div class="figure">
+<img src="9.PNG" />
+
+</div>
+<div class="figure">
+<img src="10.PNG" />
+
+</div>
+<p>Or</p>
+<p><a href="http://www.worldometers.info/" class="uri">http://www.worldometers.info/</a></p>
+<p>(Figure 1.11 &amp; Figure 1.12)</p>
+<p>For world parameter infos such as population, health, economics, food, water, energy, etc.</p>
+<div class="figure">
+<img src="11.PNG" />
+
+</div>
+<div class="figure">
+<img src="12.PNG" />
+
+</div>
+<p><strong>2. Variety:</strong> It refers to many sources and data types (structured and unstructured). Not only spreadsheet and database but also emails, photos, videos, monitoring devices, audio, etc.</p>
+<p><strong>3. velocity:</strong> There are four velocity type in big data.</p>
+<ul>
+<li>Batch</li>
+<li>Periodic</li>
+<li>Near real time</li>
+<li>Real time</li>
+</ul>
+<p>“Firehose” data sources such as social media and E-commerce need quickly analytics. Most importantly, use it at a faster rate than ever before. Using real-time alerting, Walmart company was able to find a particular Halloween novelty cookie of its stores where it wasn’t selling at all. More than realtime but predictive analytics.</p>
+<p>The infographics &amp; animations to understand more of 3V of big data from IBM are below (Figure 1.13).</p>
+<div class="figure">
+<img src="13.jpg" />
+
+</div>
+<p>There has been an rapidly growth in the field of Big Data with the benefits of the rising the new technology. This availability of big data has led to the use of big data in multiple industries ranging from</p>
+<ul>
+<li>Banking</li>
+<li>Healthcare</li>
+<li>Energy</li>
+<li>Technology</li>
+<li>Consumer</li>
+<li>Manufacturing</li>
+<li>etc</li>
+</ul>
+<p>The next section are example use case big data in some of industries (our case studies: transportation and logistics industries and another industry).</p>
+</div>
+<div id="t-l-industry-deutsche-bahn" class="section level2">
+<h2><span class="header-section-number">2.2</span> T &amp; L industry: Deutsche Bahn</h2>
+<p>Deutsche Bahn AG is a German railway company as the second-largest transport company in the world, after the German postal and logistics company Deutsche Post / DHL, and is the largest railway operator and infrastructure owner in Europe. Headquartered in Berlin, it is a private joint-stock company (AG), with the Federal Republic of Germany being its single shareholder.</p>
+<p>The Deutsche Bahn Group is divided with some subsidiaries, such as:</p>
+<ul>
+<li>Personenverkehr</li>
+<li>Arriva</li>
+<li>DB Fernverkehr</li>
+<li>DB Regio</li>
+<li>DB Netze</li>
+<li>DB Engineering &amp; Consulting</li>
+<li>Logistics</li>
+<li>ect</li>
+</ul>
+<div class="figure">
+<img src="db.jpg" />
+
+</div>
+<p>Deutsche Bahn Group (DB Group) is an international provider of mobility and logistics services operating globally in more than 130 countries. DB Group has more than 310,000 employees, with almost 40% employed outside Germany.</p>
+<p>In passenger transport, we transport more than 12.5 million people each day on our trains and buses throughout Europe. In freight transport and logistics, our European network transports over 270 million t of goods per year by rail, and over 100 million shipments by road. Our global networks move about 1.3 million t of freight by air and nearly 2.2 million TEU by sea. At about 33,000 km, our rail network in Germany is Europe’s longest. We are also the fifth-largest energy provider in Germany. The main components of our integrated rail system are our passenger transport activities in Germany, our rail freight transport activities, the operating service units and the rail infrastructure companies (RIC).</p>
+<div class="figure">
+<img src="db2.JPG" />
+
+</div>
+<p>As an operator of networks and provider of services in passenger transport, freight transport and logistics, as well as track infrastructure, our economic success is influenced by the general economic environment and the specific development of the various relevant markets.</p>
+<div class="figure">
+<img src="db3.jpg" />
+
+</div>
+<p>There are four key success factors in the development of DB Group, which are a central component of DB Group’s business model:</p>
+<ol style="list-style-type: decimal">
+<li><p>Entrepreneurial approach to business: in the course of the German rail reform DB Group has established itself as a commercial enterprise. Particularly worth mentioning in this context are the establishment of a modern and efficient organization and a value-based management approach with capital market viability as a target.</p></li>
+<li><p>Integrated Group: as a system integrator in Germany, DB Group optimizes the integrated rail system. In doing so, it serves as an important driving force for technological innovation. The integrated Group structure enables us to achieve positive synergies and align our infrastructure to support efficiency, market orientation and profitability.</p></li>
+<li><p>International position: due to our focus on Europe in passenger transport as well as our European and global orientation in the areas of freight transport and logistics activities, DB Group has an excellent position in the relevant markets. As a result, we are responding to the increasing demand for cross-border solutions. At the same time, we are best positioned to take advantage of growth opportunities.</p></li>
+<li><p>Cross-modal transport solutions: we offer our customers door-to-door mobility and logistics solutions from a single source. We use digital technologies to intelligently link various modes of transport in an economical and environmentally friendly way. In addition, we offer complementary products and services in the freight transport and logistics market.</p></li>
+</ol>
+<p>One of the subsidiary company that focusing on big data analytics to achive that key succes factors is DB Systel Gmbh (<a href="https://www.dbsystel.de/dbsystel" class="uri">https://www.dbsystel.de/dbsystel</a>). The key point of DB Systel are:</p>
+<p><strong>Big data</strong></p>
+<p>If the data can no longer be stored by conventional databases, it is known as big data. We need mathematical methods, statistical, machine learning, and alghorithms to get insigh from the big data.</p>
+<p><strong>Business intelligence/business analytics</strong></p>
+<p>The process to collected, analysed, and visualized data, either as bar graph, pie chart or another form. The KPI (Key Performance Indicators) are the main end results from this process. And support decision making in the present and also future</p>
+<p><strong>Data mining</strong></p>
+<p>The three main concepts of data mining are statistics, mathematics, and alghorithms. To detect the hidden patterns and connections in big data we need some methods, such as clustering (formation of groups of similar data), regression analysis (what depends on which other factors?) and association (if one thing happens, another does too)</p>
+<p><strong>Data lake</strong></p>
+<p>Every day, individual generates around 650 megabytes of data. There is a lake of data. Creating the data lake is a logical way of helping company to get flexible access to all of the data sources. A data lake is a central location where every department can store external and internal data (structured and unstructured data at any scale).</p>
+<div class="figure">
+<img src="datalake1.png" />
+
+</div>
+<p>Data Lakes compared to Data Warehouses.</p>
+<div class="figure">
+<img src="datalake.PNG" />
+
+</div>
+<p><strong>Smart data</strong></p>
+<p>While big data and the data lake consist of structured data and unstructured data, smart data have a specific purpose using certain algorithms and other tools. Smart data developed and improving a business processes and decision-making. The smart data consist also the analytics Edge, such as:</p>
+<ul>
+<li>Descriptive analytics</li>
+<li>Predictive analytics</li>
+<li>Prescriptive analytics</li>
+</ul>
+<p>The description of this three analytics edge you can find in the next chapter <code>3. Big Data Analytics</code></p>
+<div class="figure">
+<img src="dbbigdata.jpg" />
+
+</div>
+<p>Like most other industries, transportation and logistics (T&amp;L) is currently confronting immense change and like all change, this brings both risk and opportunity. This risk and opportunity have new technology, new market, new customers expectation, and new business modell. Based on pwc (PricewaterhouseCoopers) research, there are four disruption and uncertainty and five forces transforming in the era of big data for T&amp;L industry (Transportation &amp; Logistik).</p>
+<p><strong>Four areas of disruption and uncertainty:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Changing customer expectations</li>
+</ol>
+<p>Like individual consumers, industrial customers now expect to get shipments faster, more flexibly, and with more transparency at a lower price. No surprise that across the industry, both operating models and profitability are under strain. And the pace of transformation for large manufacturing and retail customers may turn out to be even faster than for private final consumers.</p>
+<div class="figure">
+<img src="pwc1.PNG" />
+
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Technological breakthroughs</li>
+</ol>
+<p>Technology is changing every aspect of how logistics companies operate. ‘Digital fitness’ will be a prerequisite for success: the winners will be those who understand how to exploit a whole range of new technologies, from data analytics to automation and platform solutions. Those who don’t, risk obsolescence. But with so many technologies competing for management attention and investment, defining a clear digital strategy that’s integrated into business strategy will be critical.</p>
+<div class="figure">
+<img src="pwc2.PNG" />
+
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>New entrants to the industry</li>
+</ol>
+<p>Platform technology has given rise to new business models, often driven by start-ups that enter the logistics industry. New ‘sharing’ business models could have as much of an impact on the sector as new technology. And the industry’s current customers and suppliers may end up being the biggest new entrants.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Redefining collaboration</li>
+</ol>
+<p>Horizontal collaboration is already happening, especially in last-mile delivery, but it’s hampered by inconsistencies. Higher levels of efficiency could be achieved by more consistent standards, defined through the Physical Internet and increased collaboration, whether in the form of alliances, joint ventures or M&amp;A.</p>
+<p><strong>Five Forces Transforming Transport &amp; Logistics:</strong></p>
+<p>As the complexity of modern transport and logistics grows, it is increasingly difficult to understand what to focus on, so PWC have identified five key forces transforming the T&amp;L segment:</p>
+<ol style="list-style-type: decimal">
+<li>Digitalization</li>
+<li>Shifts in international trade</li>
+<li>Software-driven process changes</li>
+<li>Changes in markets’ domestic commerce</li>
+<li>Machine-driven process changes</li>
+</ol>
+<div class="figure">
+<img src="pwc3.PNG" />
+
+</div>
+</div>
+<div id="another-industry" class="section level2">
+<h2><span class="header-section-number">2.3</span> Another industry</h2>
+<div id="agriculture" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Agriculture</h3>
+<p>Agriculture businesses are using big data to improve production and yields and improve forecasting to better optimize supply chains. Getting deep insight through big data is important to highing product quality or rising sales and market share.</p>
+<p>As agribusinesses growth and more diverse, the growing of data that must be managed are also becoming more huge and complex. The data comes from not only social media outlets and supplier network channels but also agricultural devices sensor and machine equipment. Today these data sources come from:</p>
+<ul>
+<li>Traditional enterprise data from operational systems</li>
+<li>Farm field sensor data (e.g. temperature, humidity, rainfall, sunlight)</li>
+<li>Farm equipment sensor data (from tractors, plows, and harvesters)</li>
+<li>Harvested goods and livestock delivery vehicles (from farms to processing facilities) sensor data</li>
+<li>Commodities trade data</li>
+<li>Financial data</li>
+<li>Weather data</li>
+<li>Animal and plant genomics research data</li>
+<li>Social media</li>
+</ul>
+<p>Big Data can help improve forecasting and efficiency and lead precisely decision making. Big data technologies enable agricultural sectors to analyze a variety of data sources, in turn leading to better outcomes. Agribusinesses have long lists of needed metrics. But which data that we need and where the data come from and also what is the outcome or beneficially result. Following is a list of areas where Big Data technologies can impact in agricultural sectors:</p>
+<ul>
+<li>Weather data from weather institution for better understanding time to plants</li>
+<li>Improved forecasting of yields and production data from Farm field sensor data (e.g. temperature, humidity, rainfall, sunlight)</li>
+<li>Better optimized seeds and livestock and new methodologies that improve yields and production with Farm equipment sensor data such as warehouse sensor data</li>
+<li>Faster delivery of goods produced to distribution centers and consumers with street data or vehicle (car) sensor data</li>
+<li>Real-time decisions and alerts based on data from fields and equipment with Farm equipment sensor data or Farm field sensor data</li>
+<li>Integrated production and business performance data for improved decision making with ERP system from integrated all sensor devices and sales data.</li>
+<li>Rationalized performance data across multiple geographies with sales data</li>
+<li>Accurate crop predictions with weather and crop data</li>
+<li>Stronger seeds and less hunger with plant data with purpose developing crops that can grow in any environment -Automated agriculture for better production with different system</li>
+</ul>
+<div class="figure">
+<img src="14.jpg" />
+
+</div>
+</div>
+<div id="automotive" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Automotive</h3>
+<p>The automotive industry face a compleks challenges. One thing that has the opportunity to deliver solution is analytics. Shifting marketing conditions, volatility, competition, and cost pressure are the problem to change in the automotive industry.</p>
+<p>As the automobile is being transformed by big data technologies (everything from sensors to artifical intelligence to big data analysis). The ecosystem are change and the analytics allows the data not only structured but also unstructured data such as videos, sound recording, or texts to be analyze- the results are impressive.</p>
+<div class="figure">
+<img src="15.PNG" />
+
+</div>
+<p>Below are the key points to deep undestand the automative industry:</p>
+<ul>
+<li><strong>Use the data for actionable customer segments and individualised offers and to boost sales and also improve customer retention.</strong></li>
+</ul>
+<p>Customer behaviour analytics: Customer need a consistent personalised experience across their access channels.Automakers are having to sell by offering 24/7 connectivity and reliance on social media and internet as communication tool. There is a huge of data available to support automakers for understand their customers but automakers have limits and ability to collect, analyse, and act on it.</p>
+<p>Automakers need to fully understand customers needs and behaviours to develop a bird view of customer segmentation. For example, the combination of online retailing and physical stores to build brand awareness, attract new target and transformational retailing experience for shopping anytime and anywhere. At least but not last, customer retention needs to be placed high on the strategy, understanding the customer experience with the lifecycle and journey not only just during the purchase.</p>
+<p>The example of real strategy:</p>
+<blockquote>
+<p>Inner city mobility: Pay for use customer mobility solution, covering central city locations, offering ease, speed and flexibility of commute</p>
+</blockquote>
+<blockquote>
+<p>Urban lifestyle convenience: Taking direct retailing and servicing business to the consumer</p>
+</blockquote>
+<blockquote>
+<p>Regional retailing: Providing the complete digitised brand experience through existing dealers</p>
+</blockquote>
+<ul>
+<li><strong>Applying big data analysis to a mass historical data to identify the impact of fixed and variable marketing parameters and suppport auto industry with a more precise and effective approach to quantity and composition of marketing cost.</strong></li>
+</ul>
+<p>The growth in data and information available on customers is allowing automakers and dealers to focus on spesific customers. To make this happens, automakers bring togethers internal and external information sources relating to variable marketing spend to better undestand what`s working and what isn´t. Besides that, there are some issue that must be overcome, including:</p>
+<blockquote>
+<p>Lack of available data on transaction for internal and competitor brands.</p>
+</blockquote>
+<blockquote>
+<p>Less understanding of competitor marketing and strategies</p>
+</blockquote>
+<blockquote>
+<p>Differences in customer behaviours across different region and customer segments</p>
+</blockquote>
+<blockquote>
+<p>Less ability to understand the impact of trends on market and buying behaviours</p>
+</blockquote>
+<ul>
+<li><strong>Supply chain data can reveal which links in chain could weaken allowing for proactive and timely countermeasure before real problem manifests.</strong></li>
+</ul>
+<p>Globalising operations to take adventage of high-growth markets, driving innovative strategies to optimise manufacturing process. Get it right and gain a competitive advantage and drive growth. Get it wrong and automakers can get difficult scenarios from parts shortages, government security, or lost growth opportunities. Moreover, advanced suppy chain analytics can help automakers analyse larget dataset using analytical and mathematical techniques. An example of this is the use of product configuration and web interactions which allow automakers to get early of emerging trends and forecast.</p>
+<ul>
+<li><strong>Predictive analytics for forecasting efficiency as well as operations and performance.</strong></li>
+</ul>
+<p>The good news is that predictive quality analytics capabilities available today allow quality issues to be detected and taken prevented. This news provided improved ability to better manager customer satisfaction and cost control concerns.</p>
+</div>
+<div id="retail" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Retail</h3>
+<div class="figure">
+<img src="16.jpg" />
+
+</div>
+<p>The sphere of the retail industry develop rapidly. Besides that, retail industry is the top use case of big data. The retailers manage to analyze data from different sources and develop overview of a customer to learn targeting sales. Besides that, a customer need to be easily influenced by the strategy develop by another retailer. New sources of data, from machine data (log files) and transaction, to sensor and social media, present opportunities for retailers to get impacted value and competitive advanced. To achieve this is to make best plans and decisions, undertand customer more deeply, uncover hidden trends, and becoming data driven organisation.</p>
+<p>This examples presents top big data analytics use cases in the retail, created for retailers to be aware about trends and tendencies using big data.</p>
+<ol style="list-style-type: decimal">
+<li><p>Customer Behavior Analytics for Retail: Retailers can combine, integrate and analyze all of your external and internal data to generate the deeply or hidden insights.</p></li>
+<li><p>Customer Journey Analytics: Today’s customers are more connected than before. Using mobile devices, social media and e-commerce, customers can access all of information in seconds. With big data technologies, retailers can bring data into powerful insights. Retailers will be able to get deeply understanding this questions such as:</p></li>
+</ol>
+<ul>
+<li>What is s really happening across every step in the customer journey?</li>
+<li>Who are your high-value customers and how they behave?</li>
+<li>How and when is it best to reach them?</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Personalizing the In-Store Experience With Big Data</li>
+</ol>
+<p>Big data analytics can turn data sources into advantage for retailers. These data sources can be gathered from:</p>
+<ul>
+<li>Websites</li>
+<li>Point of sales systems</li>
+<li>Mobile apps</li>
+<li>Supply chain systems</li>
+<li>In store sensors</li>
+<li>Cameras and more</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Increasing conversion rates through predictive analytics and targeted promotions</li>
+</ol>
+<p>To reduce costs and high customer acquisition, retailers need targeting promotions. This requires a 360-degree view of customers situation.</p>
+<p>In the past, customer infromation has been limited to demographic data during sales transactions. But today, customers interact more than they transact, as example is social media. Using data from internal or external sources, omni-channel retailers can:</p>
+<ul>
+<li>Test and quantify the impact of different promotional tactics on customer behavior and conversion</li>
+<li>Use a customer purchase and browsing history to identify needs and interests and then personalize promotions for customers</li>
+<li>Monitor customer purchasing behavior and social media activity to drive timely offers to customers to incent online purchases with a specific retailer</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Recommendation engines</li>
+</ol>
+<div class="figure">
+<img src="17.jpg" />
+
+</div>
+<p>Recommendation engines is one of tools for customers behaviour prediction. Recommendation engines provided retailers to increase sales and to dictate trends. Recommendation engines depend on the choices by the customers. Usually, this engines use either collaborative filtering or content based recommendation.</p>
+<ul>
+<li>Collaborative Filtering:</li>
+</ul>
+<div class="figure">
+<img src="A.PNG" />
+
+</div>
+<p>This system based on how similar users liked the item. As example, Cevi and Herdian have similar interests in games. Cevi buyed and played “Game of Thrones 4”. Herdia has not played this game. But the system recommend this game because the system has learned that Cevi and Herdian have similar interests. In simple words, users who liked this game also like too.</p>
+<ul>
+<li>Content-based Recommendations:</li>
+</ul>
+<div class="figure">
+<img src="18.png" />
+
+</div>
+<p>The company must have detailed metadata (details data explanation about the data) about each of buyers. Retailers can recommend buyers with similar tags. For example, Fathimah watch the movies “Game of Thrones 1” on Netflix. This movie may have metadata tags of “War”, so Netflix recommends to Fathimah another movis with metadata tags “Ancient”.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Market basket analysis (transaction data)</li>
+</ol>
+<p>Market basket analysis may be regarded as traditional analysis in the retail. This it a modelling method based on the theory that you buy a certain items, you are more (or less) to buy another items. This process mainly depend on the amount of data collected via customers transactions. It works by looking for combinations of items in transactions. Association Rules are widely used to analyze retail basket or transaction data. An example of step by step Association Rules are:</p>
+<ul>
+<li>Assume there are 1000 customers</li>
+<li>100 of them bought only CD games, 850 bought Playstation and 50 bought both of them.</li>
+<li>Bought CD games =&gt; bought playstation</li>
+<li>Support = P(CD games &amp; Playstation) = 50/1000 = 0.05</li>
+<li>Confidence = support/P(Playstation) = 0.05/(850/1000) = 0.05/0.85=0.06</li>
+<li>Lift = confidence/P(Milk) = 0.75/0.10 = 7.5</li>
+</ul>
+<p>Note:</p>
+<blockquote>
+<p>Support:= the number of transactions that include items in the {A} and {B} parts of the rule as a percentage of the total number of transactions.</p>
+</blockquote>
+<blockquote>
+<p>Confidence:= the ratio of the number of transactions that include all items in {B} as well as the number of transactions that include all items in {A} to the number of transactions that include all items in {A}</p>
+</blockquote>
+<blockquote>
+<p>lift:= the ratio of confidence to expected confidence. Expected confidence is the confidence divided by the frequency of B</p>
+</blockquote>
+<ol start="7" style="list-style-type: decimal">
+<li>Fraud detection</li>
+</ol>
+<div class="figure">
+<img src="19.jpg" />
+
+</div>
+<p>Fraud can encompass abuse and wate, improper payments money laundring, terrorist financing, cybersecurity and public security. The detection of fraud is important and challenging activity of retailers. The only good way to protect retailers is to be one step ahead of fraudsters.</p>
+<p>To identify of fraud-while improving customers experienceces-retailers should follow four steps:</p>
+<ol style="list-style-type: decimal">
+<li>Extract and transform all available data types from across departments or channels and incorporate them into the analytical process.</li>
+<li>Continually monitor transactions, social networks, high-risk anomalies, etc., and apply behavioral analytics to enable real-time decision making.</li>
+<li>Intstall analytics culture through data visualization at all levels, including investigative workflow optimization.</li>
+<li><p>Employ layered security techniques (another company who experts in this area).</p></li>
+<li><p>Warranty analytics</p></li>
+</ol>
+<p>With warranty issues costing retailers billions and indirect cost factors. To reduce warranty costs, build loyalty customer service, smart manufactures, and focus on post-sales service. The methods of detecting are complicated. They concentrate on the detecting anomalies in the warranty claims.</p>
+<p>The warranty analytics have some of challenges:</p>
+<ul>
+<li>Increasing warranty costs and poor customer satisfaction ratings.</li>
+<li>Cannot track warranty claims and resolutions in a timely manner.</li>
+<li>New issues grow in the field for months before they are detected.</li>
+<li>Hard to integrate and analyze historical/supplier warranty information, so it is difficult to anticipate and prepare for future issues.</li>
+<li>Business analysts and executives do not have ready access to warranty data and reports.</li>
+<li>Difficulty integrating quality and warranty data.</li>
+<li>Root cause analysis takes too long.</li>
+<li>Feeding warranty claim information back to design and manufacturing takes too long.</li>
+<li>Ineffective, manually intensive processes.</li>
+</ul>
+<ol start="9" style="list-style-type: decimal">
+<li>Customer sentiment analysis</li>
+</ol>
+<div class="figure">
+<img src="20.jpg" />
+
+</div>
+<p>Social networks (social media) and online services feedbacks can perform the sentiment analysis. Because social media data are available,also much easier to implement analytics on social platforms. This analysis uses language processing to know a positive ot negative attitude of customer. The results are as a insight fro services improvement.</p>
+<p>The examples are:</p>
+<ul>
+<li>I do not dislike this games. (Negation handling)</li>
+<li>Disliking a games is not really my thing. (Negation, inverted word order)</li>
+<li>Sometimes I really hate the Gun. (Adverbial modifies the sentiment)</li>
+<li>I’d really truly love going out in this weather! (Possibly sarcastic)</li>
+</ul>
+<ol start="10" style="list-style-type: decimal">
+<li>Price optimization</li>
+</ol>
+<p>Pricing optimization is the setting a price to maximize profits. It is driven by the supply and demand data, behavioural data, competition data,etc. The right price for customers and retailers is significant advantage brought by optimization method. The price depends not only on the costs to produce but on the the competition. The big data analysis bring this issue to the next level. The data come from many sources and define buying attitude, seasoning, competitor pricing, etc. The alghorithm define the response the changes in prices. Using the real time optimization the retaliers have an advantage to attract more customers and to build personal pricing schemes.</p>
+<p>Below are overview four 6 pricing strategies with big data:</p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>Premium pricing: Retailers set costs higher than their competitors with premium services or items.</li>
+<li>Pricing for Market Penetration: Retailers offer lower prices on goods and services for first time opened.</li>
+<li>Bundle Pricing: Buy 1 get 1 pricing.</li>
+<li>Psychology Pricing: For example, setting the price of a watch at $499 is proven to attract more consumers than setting it at $500.</li>
+<li>Price Skimming: The retaliers offer lowers prices as competitor goods appear on the market not only for the first time opened.</li>
+<li>Economy Pricing: An example of economy pricing is generic food sold at grocery stores. The generic They need little marketing and promotion expenses.is incredibly effective for large retailers companies.</li>
+</ol>
+</blockquote>
+<ol start="11" style="list-style-type: decimal">
+<li>Location of new stores</li>
+</ol>
+<p>Data analytics is efficient about this issue. The method is simple and also useful. The data are customers data, ZIP code and location for understanding the market potential. The Analyst find the solution by connection all the data source.</p>
+<ol start="12" style="list-style-type: decimal">
+<li>Lifetime value prediction</li>
+</ol>
+<p>The customer lifetime value (LTV) is one of the most important parameter in retail industry. CLV is a total value of customers profit to the retailer over the entire customer business relationship. Retail can measure how long to it takes to retargeting the investment required to earn the customers.</p>
+<p>The forecast are made on the past data to the most recent tarnsactions data. The application of the statistical methodology and machine learning helps retailer to identify customers buying pattern. It is a important business process for the retailers. More customers understanding, more high LTV value.</p>
+</div>
+<div id="financial-services" class="section level3">
+<h3><span class="header-section-number">2.3.4</span> Financial Services</h3>
+<p>Big data analytics can be the main driver of innovation in the financial industry. Using big data analytics in the financial industry is more than a trend, it has become the core analytics. The Banks and Insurances company have to realize that big data can help them more efficient, smarter decisions, and improve performance. This can be applied to the following activities:</p>
+<ul>
+<li>Banking and Insurance Industry:
+<ul>
+<li>Discovering the spending patterns of the customers</li>
+<li>Identifying the main channels of transactions (ATM withdrawal, credit/debit card payments)</li>
+<li>Splitting the customers into segments according to their profiles</li>
+<li>Product cross-selling based on the customers’ segmentation</li>
+<li>Fraud management &amp; prevention</li>
+<li>Risk assessment, compliance &amp; reporting</li>
+<li>Customer feedback analysis and application</li>
+</ul></li>
+<li>Only Insurance Industry:
+<ul>
+<li>Better product design and marketing</li>
+<li>More accurate risk assessment, underwriting, and pricing processes</li>
+<li>Stronger commitment to helping customers</li>
+</ul></li>
+<li>Only Banking Industry:
+<ul>
+<li>Better claims management</li>
+<li>Better customer targeting and ensuring growth</li>
+<li>Enhancing risk assessment</li>
+<li>Improving productivity and decision-making</li>
+<li>More business opportunities</li>
+<li>Digital banks – internet-based banks</li>
+</ul></li>
+</ul>
+<p>Here is a list of data science use cases in banking area:</p>
+<ol style="list-style-type: decimal">
+<li>Fraud detection</li>
+</ol>
+<p>Machine learning is effective detection and prevention of fraud include credit cards, accounting, insurance, and more. The key steps to fraud detection include: Obtaining data samplings for model estimation and preliminary testing Model estimation Testing stage and deployment.</p>
+<p>The fraud detection need the deep theoritical knowledge into practical applications. Several alghorithms are needed, such as association, clustering, forecasting, and classification. The simple example of efficient fraud detection is outlier data. When some unusually high transactions finded or it can investigate unusually high purchase of popular items and multiple accounts.</p>
+<p>Palmer (2014) suggests that the following stages of enterprise counter fraud measures:</p>
+<ul>
+<li><strong>Detect:</strong> By applying advanced analytics to all key fraud data to aid in predicting if an action is potentially fraudulent. </li>
+<li><strong>Respond:</strong> Applying fraud insights to take action in real time. </li>
+<li><strong>Investigate:</strong> By performing and manag-ing inquiries into suspicious activity that are supported by data analysis and col-laborative sophisticated case management. </li>
+<li><strong>Discover:</strong> Using new big data analytics capabilities that help in the identifica-tion of suspicious activity by analyzing historical data to search for patterns of fraud and financial crimes.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Marketing</li>
+</ol>
+<p>Xerago (2015) defines marketing analyt-ics as the practice of measuring, managing and analyzing market performance to maximize the effectiveness of and return on investment (ROI) from the marketing activities. The marketing analytics will help banks through data to increase profitability. Pramanick (2013) states that banks are always at risk of losing customers and need strategies that are dependent in identifying the right ac-tion to the right customer. Thus banks need customer analytics to segment the customers. This marketing will assist in determining products and services, pricing, and strategy of the banks.</p>
+<p>Morabito (2015) adds that big data ena-bled marketing automation will assist banks in servicing individual customer needs while keep-ing the marketing costs low, enabling a person-alized experience at a good ROI.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Credit Risk Management</li>
+</ol>
+<p>Sas (sas.com: one of leading analytics software company) defines credit risk as the probability of loss due to a borrower’s failure to make payments on any type of debt. Better credit risk presents an opportunity and improve performance and also competitive advantage.</p>
+<p>Due to sas institute (sas.com), credit risk have also challenges, such as:</p>
+<ul>
+<li><strong>Inefficient data management</strong>: An inability to access the right data when it’s needed causes problematic delays.</li>
+<li><strong>No groupwide risk modeling framework</strong>: Without it, banks can’t generate complex, meaningful risk measures and get a big picture of groupwide risk.</li>
+<li><strong>Constant rework</strong>: Analysts can’t change model parameters easily, which results in too much duplication of effort and negatively affects a bank’s efficiency ratio.</li>
+<li><strong>Insufficient risk tools</strong>: Without a robust risk solution, banks can’t identify portfolio concentrations or re-grade portfolios often enough to effectively manage risk.</li>
+<li><strong>Cumbersome reporting</strong>: Manual, spreadsheet-based reporting processes overburden analysts and IT.</li>
+</ul>
+<p>The solution should include:</p>
+<ul>
+<li>Better model management that spans the entire modeling life cycle.</li>
+<li>Real-time scoring and limits monitoring.</li>
+<li>Robust stress-testing capabilities.</li>
+<li>Data visualization capabilities and business intelligence tools that get important information into the hands of those who need it, when they need it.</li>
+</ul>
+</div>
+<div id="healthcare" class="section level3">
+<h3><span class="header-section-number">2.3.5</span> Healthcare</h3>
+<div class="figure">
+<img src="21.jpg" />
+
+</div>
+<p>The industry has taken advantage of big data and analytics to make strategic business decisions. Healthcare big data refers to the quantities of data that is now available to healthcare providers. The big data in the healthcare industry is changing the way patients and doctors handle care. The more big data involved, the more efficient healthcare can be.</p>
+<p>Benefits of Healthcare Big Data:</p>
+<ul>
+<li>Create holistic, 360-degree views of consumers, patients, and physicians.</li>
+<li>Improve care personalization and efficiency with comprehensive patient profiles.</li>
+<li>Inform physician relationship management efforts by tracking physician preferences, referrals, and clinical appointment data.</li>
+<li>Boost healthcare marketing efforts with information about consumer, patient, and physician needs and preferences.</li>
+<li>Analyze trends within a single hospital or greater a healthcare network to benefit research and care procedures for enhanced population health outcomes.</li>
+<li>Identify patterns in health outcomes, patient satisfaction, and hospital organization.</li>
+<li>Predict health outcomes and create preventive care strategies with data analysis.</li>
+<li>Optimize growth by improving care efficiency, effectiveness, and personalization.</li>
+</ul>
+<p>Below are common questions about Healthcare Big Data:</p>
+<ul>
+<li>What is Driving the Adoption of Big Data in Healthcare?
+<ul>
+<li>Volume of Healthcare Data</li>
+<li>Government Regulations</li>
+<li>Desire for Personalized Care</li>
+</ul></li>
+<li>How Can Marketing Take Advantage of Healthcare Big Data?
+<ul>
+<li>Propensity models (score potential targets)</li>
+<li>Communication personalization (continue an ongoing relationship with the healthcare organization)</li>
+<li>Integrated communication (holistic customer experiences throughout the care continuum)</li>
+</ul></li>
+<li>What Challenges Arise with Healthcare Big Data?
+<ul>
+<li>Sorting and prioritizing of information</li>
+<li>Ensuring that the right access to big data insights and analysis (data security issues)</li>
+</ul></li>
+<li>What is the Future of Healthcare Big Data?
+<ul>
+<li>Big data are more crucial for company success</li>
+<li>Big data healthcare will also smarter and more integrated</li>
+<li>Big data will grow with Internet of Things (IoT)</li>
+<li>Iot will become standard methods</li>
+</ul></li>
+</ul>
+</div>
+<div id="crime-terorism" class="section level3">
+<h3><span class="header-section-number">2.3.6</span> Crime &amp; Terorism</h3>
+<p>Some police are starting to use big data to predict crime. The use of fingerprints, DNA, ballistic analysis, CCTV and other types of technology have also played to improve big data analytics in crime. Top use case is predictive analytics. This helps in this aspect:</p>
+<ul>
+<li>Police can make compelling cases to get emergency resources to fight recent crime waves</li>
+<li>Police can identify the likelihood that they are dealing with serial offenders</li>
+<li>Police can look for precipitating factors that cause crime epidemics and pass that information along to policymakers to take preventive measures</li>
+</ul>
+<p>Thhe success story of crime prediction are come from RUSI (Royal United Services Institute for Defence and Security Studies). They published a paper “Big Data and Policing An Assessment of Law Enforcement Requirements, Expectations and Priorities”. One to the success project is <strong>Predictive Crime Mapping</strong></p>
+<p><strong>How Predictive Crime Mapping Works:</strong></p>
+<p>Big data analytics has been used for a decade for predictive crime mapping, and the technology continues to be developed and advanced. On the basic level, this technology is very simple and that are based on:</p>
+<ul>
+<li>Crime type</li>
+<li>Date</li>
+<li>Time</li>
+<li>Crime locations</li>
+</ul>
+<p>Police officers are printing out their predictive maps to use on patrol to combat crime in high mapping crime.</p>
+<p>**Issues Presented by Using Past Crime <a href="Data:**" class="uri">Data:**</a></p>
+<p>These big data solutions are also learning from the past, so the information can be discriminatory or bias as a result. Example:</p>
+<p>100 crimes occurred in the area by males in the past two years. The same can be inputted for age, religion and race. So, it does present a system that may create a bias and reinforce this in the police force. If John Doe is convicted of rape, and all of his rapes occurred on High Street, algorithms may be able to suggest John Doe as a rapist if:</p>
+<ul>
+<li>Rapes occurred on High Street</li>
+<li>Rapes occurred at around the same time as his previous convictions</li>
+<li>Similar women were raped</li>
+</ul>
+<p>Of course, it may not be John Doe, but this form of predictive modeling is an option with big data. It may be possible to scour records, looking for similar crimes with similar circumstances and tying them together.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="big-data-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 6 Deutsche Bahn Use Case | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 6 Deutsche Bahn Use Case | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="itsmecevi/thesis-kpi" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Deutsche Bahn Use Case | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Cevi Herdian, B. Sc">
+
+
+<meta name="date" content="2019-02-22">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="kpis-for-big-data.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html"><i class="fa fa-check"></i><b>2</b> Data is everywhere</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#big-data-definition"><i class="fa fa-check"></i><b>2.1</b> Big data definition</a></li>
+<li class="chapter" data-level="2.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#t-l-industry-deutsche-bahn"><i class="fa fa-check"></i><b>2.2</b> T &amp; L industry: Deutsche Bahn</a></li>
+<li class="chapter" data-level="2.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#another-industry"><i class="fa fa-check"></i><b>2.3</b> Another industry</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#agriculture"><i class="fa fa-check"></i><b>2.3.1</b> Agriculture</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#automotive"><i class="fa fa-check"></i><b>2.3.2</b> Automotive</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#retail"><i class="fa fa-check"></i><b>2.3.3</b> Retail</a></li>
+<li class="chapter" data-level="2.3.4" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#financial-services"><i class="fa fa-check"></i><b>2.3.4</b> Financial Services</a></li>
+<li class="chapter" data-level="2.3.5" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#healthcare"><i class="fa fa-check"></i><b>2.3.5</b> Healthcare</a></li>
+<li class="chapter" data-level="2.3.6" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#crime-terorism"><i class="fa fa-check"></i><b>2.3.6</b> Crime &amp; Terorism</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="big-data-analytics.html"><a href="big-data-analytics.html"><i class="fa fa-check"></i><b>3</b> Big Data Analytics</a><ul>
+<li class="chapter" data-level="3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#data-analytics-lifecycle"><i class="fa fa-check"></i><b>3.1</b> Data Analytics Lifecycle</a></li>
+<li class="chapter" data-level="3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#analytics-world"><i class="fa fa-check"></i><b>3.2</b> Analytics World</a></li>
+<li class="chapter" data-level="3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#deutsche-bahn-tools"><i class="fa fa-check"></i><b>3.3</b> Deutsche Bahn Tools</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#sap-business-object-web-intelligence"><i class="fa fa-check"></i><b>3.3.1</b> SAP Business Object Web Intelligence</a></li>
+<li class="chapter" data-level="3.3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#open-refine"><i class="fa fa-check"></i><b>3.3.2</b> Open Refine</a></li>
+<li class="chapter" data-level="3.3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#r-programming"><i class="fa fa-check"></i><b>3.3.3</b> R Programming</a></li>
+<li class="chapter" data-level="3.3.4" data-path="big-data-analytics.html"><a href="big-data-analytics.html#rstudio"><i class="fa fa-check"></i><b>3.3.4</b> RStudio</a></li>
+<li class="chapter" data-level="3.3.5" data-path="big-data-analytics.html"><a href="big-data-analytics.html#microsoft-power-bi"><i class="fa fa-check"></i><b>3.3.5</b> Microsoft Power BI</a></li>
+<li class="chapter" data-level="3.3.6" data-path="big-data-analytics.html"><a href="big-data-analytics.html#confluence-software"><i class="fa fa-check"></i><b>3.3.6</b> Confluence (Software)</a></li>
+<li class="chapter" data-level="3.3.7" data-path="big-data-analytics.html"><a href="big-data-analytics.html#github"><i class="fa fa-check"></i><b>3.3.7</b> Github</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="terminology.html"><a href="terminology.html"><i class="fa fa-check"></i><b>4</b> Terminology</a><ul>
+<li class="chapter" data-level="4.1" data-path="terminology.html"><a href="terminology.html#financial-and-business-terms"><i class="fa fa-check"></i><b>4.1</b> Financial and Business Terms</a></li>
+<li class="chapter" data-level="4.2" data-path="terminology.html"><a href="terminology.html#mathematical-terms"><i class="fa fa-check"></i><b>4.2</b> Mathematical Terms</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="terminology.html"><a href="terminology.html#information-technology-terms"><i class="fa fa-check"></i><b>4.2.1</b> Information Technology Terms</a></li>
+<li class="chapter" data-level="4.2.2" data-path="terminology.html"><a href="terminology.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>4.2.2</b> Other examples of reactions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="terminology.html"><a href="terminology.html#physics"><i class="fa fa-check"></i><b>4.3</b> Physics</a></li>
+<li class="chapter" data-level="4.4" data-path="terminology.html"><a href="terminology.html#biology"><i class="fa fa-check"></i><b>4.4</b> Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html"><i class="fa fa-check"></i><b>5</b> KPIs for big data</a><ul>
+<li class="chapter" data-level="5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#financial-perspective"><i class="fa fa-check"></i><b>5.1</b> Financial Perspective</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#operating-cash-flow-ocf"><i class="fa fa-check"></i><b>5.1.1</b> Operating Cash Flow (OCF)</a></li>
+<li class="chapter" data-level="5.1.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-ratio"><i class="fa fa-check"></i><b>5.1.2</b> Current Ratio</a></li>
+<li class="chapter" data-level="5.1.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#ratio-acid-test"><i class="fa fa-check"></i><b>5.1.3</b> Ratio / Acid Test</a></li>
+<li class="chapter" data-level="5.1.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#burn-rate"><i class="fa fa-check"></i><b>5.1.4</b> Burn Rate</a></li>
+<li class="chapter" data-level="5.1.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-profit-margin"><i class="fa fa-check"></i><b>5.1.5</b> Net Profit Margin</a></li>
+<li class="chapter" data-level="5.1.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#working-capital"><i class="fa fa-check"></i><b>5.1.6</b> Working Capital</a></li>
+<li class="chapter" data-level="5.1.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-receivable"><i class="fa fa-check"></i><b>5.1.7</b> Current Accounts Receivable</a></li>
+<li class="chapter" data-level="5.1.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-payable"><i class="fa fa-check"></i><b>5.1.8</b> Current Accounts Payable</a></li>
+<li class="chapter" data-level="5.1.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#inventory-turnover"><i class="fa fa-check"></i><b>5.1.9</b> Inventory Turnover</a></li>
+<li class="chapter" data-level="5.1.10" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#budget-variance"><i class="fa fa-check"></i><b>5.1.10</b> Budget Variance</a></li>
+<li class="chapter" data-level="5.1.11" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales-growth"><i class="fa fa-check"></i><b>5.1.11</b> Sales Growth</a></li>
+<li class="chapter" data-level="5.1.12" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#days-sales-outstanding-dso"><i class="fa fa-check"></i><b>5.1.12</b> Days Sales Outstanding (DSO)</a></li>
+<li class="chapter" data-level="5.1.13" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#payment-error-rate"><i class="fa fa-check"></i><b>5.1.13</b> Payment Error Rate</a></li>
+<li class="chapter" data-level="5.1.14" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list"><i class="fa fa-check"></i><b>5.1.14</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-perspective"><i class="fa fa-check"></i><b>5.2</b> Customer Perspective</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-satisfaction-score-csat"><i class="fa fa-check"></i><b>5.2.1</b> Customer Satisfaction Score (CSAT)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-promoter-score-nps"><i class="fa fa-check"></i><b>5.2.2</b> Net Promoter Score (NPS)</a></li>
+<li class="chapter" data-level="5.2.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#first-response-time"><i class="fa fa-check"></i><b>5.2.3</b> First Response Time</a></li>
+<li class="chapter" data-level="5.2.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-retention-rate"><i class="fa fa-check"></i><b>5.2.4</b> Customer Retention Rate</a></li>
+<li class="chapter" data-level="5.2.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#employee-engagement"><i class="fa fa-check"></i><b>5.2.5</b> Employee Engagement</a></li>
+<li class="chapter" data-level="5.2.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-1"><i class="fa fa-check"></i><b>5.2.6</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#process-perspective"><i class="fa fa-check"></i><b>5.3</b> Process Perspective</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#cost-performance-index-cpi"><i class="fa fa-check"></i><b>5.3.1</b> Cost performance index (CPI)</a></li>
+<li class="chapter" data-level="5.3.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#schedule-performance-index-spi"><i class="fa fa-check"></i><b>5.3.2</b> Schedule Performance Index (SPI)</a></li>
+<li class="chapter" data-level="5.3.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-2"><i class="fa fa-check"></i><b>5.3.3</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resource-and-innovation-perspective"><i class="fa fa-check"></i><b>5.4</b> Human Resource and Innovation Perspective</a></li>
+<li class="chapter" data-level="5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-industry"><i class="fa fa-check"></i><b>5.5</b> By Industry</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#t-l-industry"><i class="fa fa-check"></i><b>5.5.1</b> T &amp; L Industry</a></li>
+<li class="chapter" data-level="5.5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#wholesale-trade"><i class="fa fa-check"></i><b>5.5.2</b> Wholesale Trade</a></li>
+<li class="chapter" data-level="5.5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#utilities-industry"><i class="fa fa-check"></i><b>5.5.3</b> Utilities Industry</a></li>
+<li class="chapter" data-level="5.5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#retail-industry"><i class="fa fa-check"></i><b>5.5.4</b> Retail Industry</a></li>
+<li class="chapter" data-level="5.5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#real-estate-and-rental-and-leasing"><i class="fa fa-check"></i><b>5.5.5</b> Real Estate and Rental and Leasing</a></li>
+<li class="chapter" data-level="5.5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#manufacturing-industry"><i class="fa fa-check"></i><b>5.5.6</b> Manufacturing Industry</a></li>
+<li class="chapter" data-level="5.5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance-and-insurance"><i class="fa fa-check"></i><b>5.5.7</b> Finance and Insurance</a></li>
+<li class="chapter" data-level="5.5.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#construction"><i class="fa fa-check"></i><b>5.5.8</b> Construction</a></li>
+<li class="chapter" data-level="5.5.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#it-industry"><i class="fa fa-check"></i><b>5.5.9</b> IT Industry</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-business-goal"><i class="fa fa-check"></i><b>5.6</b> By Business Goal</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#improve-response-time"><i class="fa fa-check"></i><b>5.6.1</b> Improve response time</a></li>
+<li class="chapter" data-level="5.6.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#increase-profit-margins"><i class="fa fa-check"></i><b>5.6.2</b> Increase profit margins</a></li>
+<li class="chapter" data-level="5.6.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#optimize-campaigns"><i class="fa fa-check"></i><b>5.6.3</b> Optimize campaigns</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-department"><i class="fa fa-check"></i><b>5.7</b> By Department</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales"><i class="fa fa-check"></i><b>5.7.1</b> Sales</a></li>
+<li class="chapter" data-level="5.7.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#marketing"><i class="fa fa-check"></i><b>5.7.2</b> Marketing</a></li>
+<li class="chapter" data-level="5.7.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance"><i class="fa fa-check"></i><b>5.7.3</b> Finance</a></li>
+<li class="chapter" data-level="5.7.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resources"><i class="fa fa-check"></i><b>5.7.4</b> Human Resources</a></li>
+<li class="chapter" data-level="5.7.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#information-technology"><i class="fa fa-check"></i><b>5.7.5</b> Information Technology</a></li>
+<li class="chapter" data-level="5.7.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-service"><i class="fa fa-check"></i><b>5.7.6</b> Customer Service</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html"><i class="fa fa-check"></i><b>6</b> Deutsche Bahn Use Case</a><ul>
+<li class="chapter" data-level="6.1" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#it-spend-analysis-kpi"><i class="fa fa-check"></i><b>6.1</b> IT Spend Analysis KPI</a></li>
+<li class="chapter" data-level="6.2" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#human-resources-kpi"><i class="fa fa-check"></i><b>6.2</b> Human Resources KPI</a></li>
+<li class="chapter" data-level="6.3" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#opportunity-analysis-kpi"><i class="fa fa-check"></i><b>6.3</b> Opportunity Analysis KPI</a></li>
+<li class="chapter" data-level="6.4" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-hr-turnover"><i class="fa fa-check"></i><b>6.4</b> Data Science HR Turnover</a></li>
+<li class="chapter" data-level="6.5" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-sales-prediction"><i class="fa fa-check"></i><b>6.5</b> Data Science Sales Prediction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>7</b> Appendix</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="deutsche-bahn-use-case" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Deutsche Bahn Use Case</h1>
+<p>DB Headquarters has the consulting function for all of DB Subdiaries. DB Headquarters works together with the all data sources to devise data usage strategies. By collaborating with the domain’s experts, DB Headquarters develops matching mathematical models and realises the application environment. The data and corresponding analytical results are then prepared for visual presentation and made available for further examination.</p>
+<p>At Deutsche Bahn the using of KPI have three functions:</p>
+<ol style="list-style-type: decimal">
+<li>General Overview</li>
+<li>Warning system</li>
+<li>Decisions making</li>
+</ol>
+<p>Below are some of use case in DB:</p>
+<div id="it-spend-analysis-kpi" class="section level2">
+<h2><span class="header-section-number">6.1</span> IT Spend Analysis KPI</h2>
+<p><strong>Overview:</strong></p>
+<p>The IT Spend Analysis Dashboard analyze the planned vs. actual costs of an IT department. This Dashboard comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan.</p>
+<p><strong>Glossary:</strong></p>
+<blockquote>
+<p>Year-to-date (YTD) is a period, starting from the beginning of the current year (either the calendar year or fiscal year) and continuing up to the present day.</p>
+</blockquote>
+<blockquote>
+<p>Var: Variance or the deviation</p>
+</blockquote>
+<p><strong>Dataset:</strong></p>
+<p>This data is part of a series that illustrates how you can Dashboard BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<a href="http://obvience.com/" class="uri">http://obvience.com/</a>) that has been anonymized.</p>
+<p>This analysis contains 8 entity (table) and every table has attribute.</p>
+<ol style="list-style-type: decimal">
+<li>business area</li>
+</ol>
+<ul>
+<li>Attribute: Business Area, Business Area ID,</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>cost element</li>
+</ol>
+<ul>
+<li>Attribute: Cost element name, Cost Element Group, Cost Element Sub Group, Cost Element ID</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>country region</li>
+</ol>
+<ul>
+<li>Attribute: Sales Region, Country/Region, Country/Region ID</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>date</li>
+</ol>
+<ul>
+<li>Attribute: Date, Year, Period, Month</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>department</li>
+</ol>
+<ul>
+<li>Attribute: VP, Department</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>it-area</li>
+</ol>
+<ul>
+<li>Attribute: IT Area, IT Sub Area, IT Sub Area ID</li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li>scenario</li>
+</ol>
+<ul>
+<li>Attribute: Scenario, Scenario ID, ScenarioDescription</li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li>fact_it</li>
+</ol>
+<ul>
+<li>Attribute: Date, Value, Department, Cost Element ID, Country/Region ID, Business Area ID, IT Sub Area ID, Scenario ID</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p>IT Spend Trend Dashboard: YTD IT Spend Trend Analysis page</p>
+<ul>
+<li>Var Plan % by Sales Region</li>
+<li>Var Plan by Month</li>
+<li>Var Plan , Var Plan % and Actual by Business Area and Period</li>
+<li>IT Area</li>
+</ul>
+<p>Spend by Cost Element Dashboard: YTD Spend by Cost Elements page</p>
+<ul>
+<li>Plan and Target</li>
+<li>Var Plan % and Var LE3 % by IT Area</li>
+<li>Var Plan % by Sales Region</li>
+<li>Amount by Month and Scenario</li>
+</ul>
+<p>Plan Variance Analysis Dashboard</p>
+<ul>
+<li>Variance Latest Estimates</li>
+<li>Var Plan % by Business Area</li>
+<li>Var Plan by Sales Region</li>
+<li>Var Plan % by Month and Business Area</li>
+</ul>
+<p><strong>Technical documentation: </strong></p>
+<p>Let’s make the data model from the 8 entity. Just drag every <a href="https://en.wikipedia.org/wiki/Primary_key">Primary Key</a> of the entity in power pivot or power bi data model</p>
+<div class="figure">
+<img src="itspend.PNG" />
+
+</div>
+<p>After that, create <a href="https://docs.microsoft.com/en-us/power-bi/desktop-tutorial-create-measures">a measure in power bi or power pivot</a></p>
+<p><strong>Note:</strong> we use the format of table and attribut with <a href="https://docs.microsoft.com/en-us/power-bi/desktop-quickstart-learn-dax-basics">DAX language</a></p>
+<p><strong>Extras:</strong> <a href="https://support.office.com/en-us/article/quickstart-learn-dax-basics-in-30-minutes-51744643-c2a5-436a-bdf6-c895762bec1a?omkt=en-US&amp;ui=en-US&amp;rs=en-US&amp;ad=US">Quick Guide DAX</a></p>
+<p>Below are the explanation of every graph:</p>
+</div>
+<div id="human-resources-kpi" class="section level2">
+<h2><span class="header-section-number">6.2</span> Human Resources KPI</h2>
+<p><strong>Overview: </strong></p>
+<p>Human Resources (HR) dashboards aggregate and present employee data in a meaningful way. As a metrics, Human Resources dashboards simplify information gathering, and present data in a way that can be sorted, analyzed, and presented. This use case dashboard looks at new hires, active employees, and employees who left and tries to uncover any trends in the hiring strategy. Our main objectives are to understand:</p>
+<ul>
+<li>Who we hire</li>
+<li>Biases in our hiring strategy</li>
+<li>Trends in voluntary separations</li>
+</ul>
+<p><strong>Glosarry: </strong></p>
+<blockquote>
+<p>SPLY: same periode last year. One year back in time from the context dates</p>
+</blockquote>
+<p><strong>Dataset: </strong></p>
+<p>This Human Resources data is part of a series that illustrates how you can Dashboard BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<a href="http://obvience.com/" class="uri">http://obvience.com/</a>) that has been anonymized.</p>
+<p>This dataset contains 9 entity (table) and every table has attribute to.</p>
+<ol style="list-style-type: decimal">
+<li>age group</li>
+</ol>
+<ul>
+<li>Attribute: AgeGroupID, AgeGroup</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>gender</li>
+</ol>
+<ul>
+<li>Attribute: ID, Gender, Sort</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>ethnicity Attribute: Ethnic Group, Ethnicity</li>
+<li>date Attribute: Date, Month, MonthNumber, Period, PeriodNumber, Qtr, QtrNumber, Year, Day, MonthStartDate, MonthEndDate, MonthIncrementNumber</li>
+<li>separation reason Attribute: SeparationTypeID, SeparationReason</li>
+<li>pay type Attribute: PayTypeID, PayType</li>
+<li>FP</li>
+</ol>
+<ul>
+<li>Attribute: FP, FPDesc</li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li>bu Attribute: BU, RegionSeq, VP, Region</li>
+</ol>
+<ul>
+<li>employee_fact Attribute: date, EmplID, Gender, Age, EthnicGroup, FP, TermDate, isNewHire, BU, HireDate, PayTypeID, TermReason, AgeGroupID ,TenureDays, TenureMonths, BadHires</li>
+</ul>
+<p><strong>Solution: </strong></p>
+<p>New hires Dashboard</p>
+<ul>
+<li>New Hires Vs New Hires SPLY</li>
+<li>New Hires by Region and FPDesc</li>
+<li>New Hires by Region and Ethnicity</li>
+<li>Gender</li>
+<li>AgeGroup</li>
+</ul>
+<p>Active Employees vs Separations Dashboard</p>
+<ul>
+<li>YoY Change</li>
+<li>AgeG roup</li>
+<li>Gender</li>
+<li>Actives by Region</li>
+<li>Actives vs Actives SPLY</li>
+<li>Separations by Reason</li>
+<li>Seps vs Seps SPLY</li>
+</ul>
+<p>Bad Hires Dashboard</p>
+<p>Bad hires are defined as employees who didn’t last for more than 60 days.</p>
+<ul>
+<li>Bad Hires by Region and Gender</li>
+<li>Bad Hires by Region and Ethnicity</li>
+<li>Bad Hires YoY % Change by Month and Age Group</li>
+<li>Bad Hire % of Actives and Bad Hires % of Active SPLY by Region</li>
+</ul>
+<p><strong>Technical Documentation: </strong></p>
+</div>
+<div id="opportunity-analysis-kpi" class="section level2">
+<h2><span class="header-section-number">6.3</span> Opportunity Analysis KPI</h2>
+<p><strong>Overview :</strong></p>
+<p>Opportunity analyisis is a detailed review of the prospects within a potential market. The company has 2 sales channels: direct and partner. The Sales Department created this dashboard to track opportunities and revenue by region, deal size, and channel.</p>
+<p>The Sales Department relies on two measures of revenue:</p>
+<ul>
+<li><strong>Revenue </strong>– this is a salesperson’s estimate of what he believes the revenue will be.</li>
+<li><strong>Factored Revenue </strong> – this is calculated as Revenue X Probability% and is generally accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current <strong>Sales Stage </strong>.
+<ul>
+<li>Lead – 10%</li>
+<li>Qualify – 20%</li>
+<li>Solution – 40%</li>
+<li>Proposal – 60%</li>
+<li>Finalize – 80%</li>
+</ul></li>
+</ul>
+<p><strong>Glossary: </strong></p>
+<blockquote>
+<p>AVG: Average</p>
+</blockquote>
+<p><strong>Dataset : </strong></p>
+<p>This data is part of a series that illustrates how you can Dashboard BI with business-oriented data, reports and dashboards. This is real data from obviEnce (<a href="http://obvience.com/" class="uri">http://obvience.com/</a>) that has been anonymized.</p>
+<p>This dataset contains 5 entity (table) and every table has attribute.</p>
+<ol style="list-style-type: decimal">
+<li>sales stage</li>
+</ol>
+<ul>
+<li>Attibute: Probability, Sales Stage, Sales Stage ID</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>product</li>
+</ol>
+<ul>
+<li>Attibute: Product Code, Product ID</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>partner</li>
+</ol>
+<ul>
+<li>Attibute: Partner, Partner ID, Partner Driven</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>opportunity</li>
+</ol>
+<ul>
+<li>Attibute: Name, Opportunity ID, Rank, SizeID, Opportunity Size</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>fact</li>
+</ol>
+<ul>
+<li>Attibute: EstimatedCloseDate, Opportunity ID, Sales Stage ID, Account ID, Partner ID, Product ID, ProductRevenue, FactoredProductRevenue, Create Date, Opportunity Days, Year, Month_Number, Month</li>
+</ul>
+<p><strong>Solution : </strong></p>
+<p>Opportunity Counts Overview</p>
+<ul>
+<li>Opportunity Count</li>
+<li>Opportunity Count by Region</li>
+<li>Opportunity Count by Sales Stage</li>
+<li>Opportunity Count by Partner Driven and Opportunity Size</li>
+<li>Opportunity Count by Partner Driven and Sales Stage</li>
+</ul>
+<p>Revenue Analysis</p>
+<ul>
+<li>Revenue by Region</li>
+<li>Revenue by Sales Stage and Partner Driven</li>
+<li>Revenue</li>
+<li>Factored Revenue</li>
+<li>Opportunity Count</li>
+<li>AVG Revenue by Partner Driven and Opportunity Size</li>
+</ul>
+<p>Upcoming Opportunities by Month</p>
+<ul>
+<li>Opportunity Count</li>
+<li>Factored Revenue by Opportunity Size</li>
+<li>AVG Revenue by Partner Driven and Sales Stage</li>
+<li>Opportunity Count by Month and Sales Stage</li>
+</ul>
+<p><strong>Technical Documentation: </strong></p>
+</div>
+<div id="data-science-hr-turnover" class="section level2">
+<h2><span class="header-section-number">6.4</span> Data Science HR Turnover</h2>
+</div>
+<div id="data-science-sales-prediction" class="section level2">
+<h2><span class="header-section-number">6.5</span> Data Science Sales Prediction</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="kpis-for-big-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-summary.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

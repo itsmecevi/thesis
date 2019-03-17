@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 5 KPIs for big data | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 5 KPIs for big data | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="itsmecevi/thesis-kpi" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 KPIs for big data | Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Cevi Herdian, B. Sc">
+
+
+<meta name="date" content="2019-02-22">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="terminology.html">
+<link rel="next" href="deutsche-bahn-use-case.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html"><i class="fa fa-check"></i><b>2</b> Data is everywhere</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#big-data-definition"><i class="fa fa-check"></i><b>2.1</b> Big data definition</a></li>
+<li class="chapter" data-level="2.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#t-l-industry-deutsche-bahn"><i class="fa fa-check"></i><b>2.2</b> T &amp; L industry: Deutsche Bahn</a></li>
+<li class="chapter" data-level="2.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#another-industry"><i class="fa fa-check"></i><b>2.3</b> Another industry</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#agriculture"><i class="fa fa-check"></i><b>2.3.1</b> Agriculture</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#automotive"><i class="fa fa-check"></i><b>2.3.2</b> Automotive</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#retail"><i class="fa fa-check"></i><b>2.3.3</b> Retail</a></li>
+<li class="chapter" data-level="2.3.4" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#financial-services"><i class="fa fa-check"></i><b>2.3.4</b> Financial Services</a></li>
+<li class="chapter" data-level="2.3.5" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#healthcare"><i class="fa fa-check"></i><b>2.3.5</b> Healthcare</a></li>
+<li class="chapter" data-level="2.3.6" data-path="data-is-everywhere.html"><a href="data-is-everywhere.html#crime-terorism"><i class="fa fa-check"></i><b>2.3.6</b> Crime &amp; Terorism</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="big-data-analytics.html"><a href="big-data-analytics.html"><i class="fa fa-check"></i><b>3</b> Big Data Analytics</a><ul>
+<li class="chapter" data-level="3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#data-analytics-lifecycle"><i class="fa fa-check"></i><b>3.1</b> Data Analytics Lifecycle</a></li>
+<li class="chapter" data-level="3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#analytics-world"><i class="fa fa-check"></i><b>3.2</b> Analytics World</a></li>
+<li class="chapter" data-level="3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#deutsche-bahn-tools"><i class="fa fa-check"></i><b>3.3</b> Deutsche Bahn Tools</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="big-data-analytics.html"><a href="big-data-analytics.html#sap-business-object-web-intelligence"><i class="fa fa-check"></i><b>3.3.1</b> SAP Business Object Web Intelligence</a></li>
+<li class="chapter" data-level="3.3.2" data-path="big-data-analytics.html"><a href="big-data-analytics.html#open-refine"><i class="fa fa-check"></i><b>3.3.2</b> Open Refine</a></li>
+<li class="chapter" data-level="3.3.3" data-path="big-data-analytics.html"><a href="big-data-analytics.html#r-programming"><i class="fa fa-check"></i><b>3.3.3</b> R Programming</a></li>
+<li class="chapter" data-level="3.3.4" data-path="big-data-analytics.html"><a href="big-data-analytics.html#rstudio"><i class="fa fa-check"></i><b>3.3.4</b> RStudio</a></li>
+<li class="chapter" data-level="3.3.5" data-path="big-data-analytics.html"><a href="big-data-analytics.html#microsoft-power-bi"><i class="fa fa-check"></i><b>3.3.5</b> Microsoft Power BI</a></li>
+<li class="chapter" data-level="3.3.6" data-path="big-data-analytics.html"><a href="big-data-analytics.html#confluence-software"><i class="fa fa-check"></i><b>3.3.6</b> Confluence (Software)</a></li>
+<li class="chapter" data-level="3.3.7" data-path="big-data-analytics.html"><a href="big-data-analytics.html#github"><i class="fa fa-check"></i><b>3.3.7</b> Github</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="terminology.html"><a href="terminology.html"><i class="fa fa-check"></i><b>4</b> Terminology</a><ul>
+<li class="chapter" data-level="4.1" data-path="terminology.html"><a href="terminology.html#financial-and-business-terms"><i class="fa fa-check"></i><b>4.1</b> Financial and Business Terms</a></li>
+<li class="chapter" data-level="4.2" data-path="terminology.html"><a href="terminology.html#mathematical-terms"><i class="fa fa-check"></i><b>4.2</b> Mathematical Terms</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="terminology.html"><a href="terminology.html#information-technology-terms"><i class="fa fa-check"></i><b>4.2.1</b> Information Technology Terms</a></li>
+<li class="chapter" data-level="4.2.2" data-path="terminology.html"><a href="terminology.html#other-examples-of-reactions"><i class="fa fa-check"></i><b>4.2.2</b> Other examples of reactions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="terminology.html"><a href="terminology.html#physics"><i class="fa fa-check"></i><b>4.3</b> Physics</a></li>
+<li class="chapter" data-level="4.4" data-path="terminology.html"><a href="terminology.html#biology"><i class="fa fa-check"></i><b>4.4</b> Biology</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html"><i class="fa fa-check"></i><b>5</b> KPIs for big data</a><ul>
+<li class="chapter" data-level="5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#financial-perspective"><i class="fa fa-check"></i><b>5.1</b> Financial Perspective</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#operating-cash-flow-ocf"><i class="fa fa-check"></i><b>5.1.1</b> Operating Cash Flow (OCF)</a></li>
+<li class="chapter" data-level="5.1.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-ratio"><i class="fa fa-check"></i><b>5.1.2</b> Current Ratio</a></li>
+<li class="chapter" data-level="5.1.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#ratio-acid-test"><i class="fa fa-check"></i><b>5.1.3</b> Ratio / Acid Test</a></li>
+<li class="chapter" data-level="5.1.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#burn-rate"><i class="fa fa-check"></i><b>5.1.4</b> Burn Rate</a></li>
+<li class="chapter" data-level="5.1.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-profit-margin"><i class="fa fa-check"></i><b>5.1.5</b> Net Profit Margin</a></li>
+<li class="chapter" data-level="5.1.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#working-capital"><i class="fa fa-check"></i><b>5.1.6</b> Working Capital</a></li>
+<li class="chapter" data-level="5.1.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-receivable"><i class="fa fa-check"></i><b>5.1.7</b> Current Accounts Receivable</a></li>
+<li class="chapter" data-level="5.1.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#current-accounts-payable"><i class="fa fa-check"></i><b>5.1.8</b> Current Accounts Payable</a></li>
+<li class="chapter" data-level="5.1.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#inventory-turnover"><i class="fa fa-check"></i><b>5.1.9</b> Inventory Turnover</a></li>
+<li class="chapter" data-level="5.1.10" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#budget-variance"><i class="fa fa-check"></i><b>5.1.10</b> Budget Variance</a></li>
+<li class="chapter" data-level="5.1.11" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales-growth"><i class="fa fa-check"></i><b>5.1.11</b> Sales Growth</a></li>
+<li class="chapter" data-level="5.1.12" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#days-sales-outstanding-dso"><i class="fa fa-check"></i><b>5.1.12</b> Days Sales Outstanding (DSO)</a></li>
+<li class="chapter" data-level="5.1.13" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#payment-error-rate"><i class="fa fa-check"></i><b>5.1.13</b> Payment Error Rate</a></li>
+<li class="chapter" data-level="5.1.14" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list"><i class="fa fa-check"></i><b>5.1.14</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-perspective"><i class="fa fa-check"></i><b>5.2</b> Customer Perspective</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-satisfaction-score-csat"><i class="fa fa-check"></i><b>5.2.1</b> Customer Satisfaction Score (CSAT)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#net-promoter-score-nps"><i class="fa fa-check"></i><b>5.2.2</b> Net Promoter Score (NPS)</a></li>
+<li class="chapter" data-level="5.2.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#first-response-time"><i class="fa fa-check"></i><b>5.2.3</b> First Response Time</a></li>
+<li class="chapter" data-level="5.2.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-retention-rate"><i class="fa fa-check"></i><b>5.2.4</b> Customer Retention Rate</a></li>
+<li class="chapter" data-level="5.2.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#employee-engagement"><i class="fa fa-check"></i><b>5.2.5</b> Employee Engagement</a></li>
+<li class="chapter" data-level="5.2.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-1"><i class="fa fa-check"></i><b>5.2.6</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#process-perspective"><i class="fa fa-check"></i><b>5.3</b> Process Perspective</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#cost-performance-index-cpi"><i class="fa fa-check"></i><b>5.3.1</b> Cost performance index (CPI)</a></li>
+<li class="chapter" data-level="5.3.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#schedule-performance-index-spi"><i class="fa fa-check"></i><b>5.3.2</b> Schedule Performance Index (SPI)</a></li>
+<li class="chapter" data-level="5.3.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#complete-list-2"><i class="fa fa-check"></i><b>5.3.3</b> Complete List</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resource-and-innovation-perspective"><i class="fa fa-check"></i><b>5.4</b> Human Resource and Innovation Perspective</a></li>
+<li class="chapter" data-level="5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-industry"><i class="fa fa-check"></i><b>5.5</b> By Industry</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#t-l-industry"><i class="fa fa-check"></i><b>5.5.1</b> T &amp; L Industry</a></li>
+<li class="chapter" data-level="5.5.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#wholesale-trade"><i class="fa fa-check"></i><b>5.5.2</b> Wholesale Trade</a></li>
+<li class="chapter" data-level="5.5.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#utilities-industry"><i class="fa fa-check"></i><b>5.5.3</b> Utilities Industry</a></li>
+<li class="chapter" data-level="5.5.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#retail-industry"><i class="fa fa-check"></i><b>5.5.4</b> Retail Industry</a></li>
+<li class="chapter" data-level="5.5.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#real-estate-and-rental-and-leasing"><i class="fa fa-check"></i><b>5.5.5</b> Real Estate and Rental and Leasing</a></li>
+<li class="chapter" data-level="5.5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#manufacturing-industry"><i class="fa fa-check"></i><b>5.5.6</b> Manufacturing Industry</a></li>
+<li class="chapter" data-level="5.5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance-and-insurance"><i class="fa fa-check"></i><b>5.5.7</b> Finance and Insurance</a></li>
+<li class="chapter" data-level="5.5.8" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#construction"><i class="fa fa-check"></i><b>5.5.8</b> Construction</a></li>
+<li class="chapter" data-level="5.5.9" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#it-industry"><i class="fa fa-check"></i><b>5.5.9</b> IT Industry</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-business-goal"><i class="fa fa-check"></i><b>5.6</b> By Business Goal</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#improve-response-time"><i class="fa fa-check"></i><b>5.6.1</b> Improve response time</a></li>
+<li class="chapter" data-level="5.6.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#increase-profit-margins"><i class="fa fa-check"></i><b>5.6.2</b> Increase profit margins</a></li>
+<li class="chapter" data-level="5.6.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#optimize-campaigns"><i class="fa fa-check"></i><b>5.6.3</b> Optimize campaigns</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#by-department"><i class="fa fa-check"></i><b>5.7</b> By Department</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#sales"><i class="fa fa-check"></i><b>5.7.1</b> Sales</a></li>
+<li class="chapter" data-level="5.7.2" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#marketing"><i class="fa fa-check"></i><b>5.7.2</b> Marketing</a></li>
+<li class="chapter" data-level="5.7.3" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#finance"><i class="fa fa-check"></i><b>5.7.3</b> Finance</a></li>
+<li class="chapter" data-level="5.7.4" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#human-resources"><i class="fa fa-check"></i><b>5.7.4</b> Human Resources</a></li>
+<li class="chapter" data-level="5.7.5" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#information-technology"><i class="fa fa-check"></i><b>5.7.5</b> Information Technology</a></li>
+<li class="chapter" data-level="5.7.6" data-path="kpis-for-big-data.html"><a href="kpis-for-big-data.html#customer-service"><i class="fa fa-check"></i><b>5.7.6</b> Customer Service</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html"><i class="fa fa-check"></i><b>6</b> Deutsche Bahn Use Case</a><ul>
+<li class="chapter" data-level="6.1" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#it-spend-analysis-kpi"><i class="fa fa-check"></i><b>6.1</b> IT Spend Analysis KPI</a></li>
+<li class="chapter" data-level="6.2" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#human-resources-kpi"><i class="fa fa-check"></i><b>6.2</b> Human Resources KPI</a></li>
+<li class="chapter" data-level="6.3" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#opportunity-analysis-kpi"><i class="fa fa-check"></i><b>6.3</b> Opportunity Analysis KPI</a></li>
+<li class="chapter" data-level="6.4" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-hr-turnover"><i class="fa fa-check"></i><b>6.4</b> Data Science HR Turnover</a></li>
+<li class="chapter" data-level="6.5" data-path="deutsche-bahn-use-case.html"><a href="deutsche-bahn-use-case.html#data-science-sales-prediction"><i class="fa fa-check"></i><b>6.5</b> Data Science Sales Prediction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>7</b> Appendix</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Driven KPI (Key Performance Indicators) Insight &amp; Prediction</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="kpis-for-big-data" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> KPIs for big data</h1>
+<p><strong>What is KPI? </strong></p>
+<p>KPI (Key Performance Indicators) are the response to company fear of big data, ugly spreadsheets and uncertain applications with unstructured data. The idea of KPI is that company presenting big data easily and also using business relevant language.</p>
+<p>Key Performance Indicators are:</p>
+<ul>
+<li>Use rates, ratios, percentages and averages instead of raw numbers</li>
+<li>Leverage tachometers and thermometers and stoplights instead of pie charts and bar graphs</li>
+<li>Provide temporal context and highlight change instead of presenting tables of data</li>
+<li>Drive business-critical action</li>
+</ul>
+<p>Measuring the right KPI is vital to the health and success of the company. Here are 5 reasons why You need KPIs.</p>
+<ol style="list-style-type: decimal">
+<li>Monitor company health</li>
+<li>Measuring progress over time</li>
+<li>To make adjustments &amp; stay on track</li>
+<li>Solving problems and getting more opportunities</li>
+<li>Analyzing patterns over time</li>
+</ol>
+<p>Examples of KPIs are:</p>
+<ul>
+<li>Net Profit Margin</li>
+<li>ROI (Return of Investment)</li>
+<li>Operating Cash Flow (OCF)</li>
+<li>Sales Growth</li>
+<li>BEP (Break Event Point)</li>
+<li>Cash Ratio</li>
+</ul>
+<p><strong>Types of KPI </strong></p>
+<p>Depending on your organization’s goals and company objectives, they can track various Key Performance Indicators. The right KPIs right is crucial for getting actionable and insightful information about the company’s performance and situation.</p>
+<blockquote>
+<p>Each business department measures different KPIs because they all have different tasks and goals.</p>
+</blockquote>
+<p>There are five main types of KPIs:</p>
+<ol style="list-style-type: decimal">
+<li>Business KPI</li>
+<li>Financial KPI</li>
+<li>Sales KPI</li>
+<li>Marketing KPI</li>
+<li><p>Project Management KPI</p></li>
+<li><p>Business KPI</p></li>
+</ol>
+<p>Business KPIs help to measure long-term business goals. By tracking business KPI, companies are able to understand important business processes and identify better decision.</p>
+<p>Examples of popular business KPIs are:</p>
+<ul>
+<li>Revenue Growth Rate</li>
+<li>Churn Rate</li>
+<li>Acquisition Rate</li>
+<li>Relative Market Share</li>
+<li>Return on Equity</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Financial KPI</li>
+</ol>
+<p>This KPI provide an assessment of business performance. It is usually used by an organization’s leader and financial department. Financial KPI indicate how good a company is doing in terms of generating revenue and profits.</p>
+<p>Examples of popular financial KPIs are:</p>
+<ul>
+<li>MRR (Monthly Recurring Revenue)</li>
+<li>Net profit margin</li>
+<li>Operating cash flow (OCF)</li>
+<li>Working Capital</li>
+<li>Current Ratio</li>
+<li>Budget Variance</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Sales KPI</li>
+</ol>
+<p>Sales KPIs are measurable values that indicates the performance of various sales processes, used by the sales team to monitor the achievement of their key objectives and goals. Sales metrics help to keep and attain sustainable sales.</p>
+<p>Example of Popular sales KPI are:</p>
+<ul>
+<li>Monthly New Leads/Sales</li>
+<li>Lead-to-Customer Conversion Rate</li>
+<li>Cost per Acquisition</li>
+<li>Sales Qualified Leads (SQL)</li>
+<li>Customer Lifetime Value (LTV)</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Marketing KPI</li>
+</ol>
+<p>Marketing KPIs help marketing department to monitor their success across all marketing channels. A quick overview of marketing metrics shows how well the marketing team’s doing in terms of acquiring new leads.</p>
+<p>Examples of popular marketing KPI are:</p>
+<ul>
+<li>Website Traffic Per Source</li>
+<li>Cost Per Acquisition CPA</li>
+<li>Marketing Qualified Leads (MQL)</li>
+<li>Net Promoter Score</li>
+<li>Conversion Rate</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Project Management KPI</li>
+</ol>
+<p>A project managers used this KPI to monitor project progress. Company use project KPI to identify successful projects and meet important deadlines.</p>
+<p>Popular Project management KPI are:</p>
+<ul>
+<li>Planned Value (PV)</li>
+<li>Actual Cost (AC)</li>
+<li>Earned Value (EV)</li>
+<li>Cost Variance (CV)</li>
+<li>Schedule Variance (SV)</li>
+</ul>
+<p>Before we talks about use case in Deutsche Bahn. We need to understand the types and classification of KPI terms based on perspektive, industry, and etc.</p>
+<p><strong>High level vs Low level KPI </strong></p>
+<p><code>High-level KPI</code> demonstrate the company’s overall performance. Examples of high-level KPIs include Annual Growth, Annual Recurring Revenue (ARR), and Relative Market Share.</p>
+<p>Single individuals have no impact on these KPI. They’re the result of teamwork across multiple departments and subsidiary company.</p>
+<p><code>Low-level KPI</code> indicate the performance of specific departments or individuals. Low-level business metrics are tied to people’s day-to-day work and more actionable.</p>
+<p><strong>Five essential questions for creating a KPI </strong></p>
+<ol style="list-style-type: decimal">
+<li>What are the business results (goals)?</li>
+<li>How can the KPI values be improved by taking action?</li>
+<li>Do we have all the relevant data?</li>
+<li>Who is going to use the KPI?</li>
+<li>How to visualize specific KPI (graphs, metrics, diagrams, etc.)?</li>
+</ol>
+<p><strong>How to choose the right KPI</strong></p>
+<p>The most important thing is define a business goals. It is better to focus on a few key metrics instead of many irrelevant ones. Ensure that every single one of your business metrics meets the SMART criteria:</p>
+<p>SMART KPIs are:</p>
+<p><strong>S </strong>pecific</p>
+<p><strong>M </strong>easurable</p>
+<p><strong>A </strong>ttainable</p>
+<p><strong>R </strong>elevant</p>
+<p><strong>T </strong>ime-Bound</p>
+<p><strong>Note </strong></p>
+<ul>
+<li><strong>Understand that Key Performance Indicators </strong> are different for each industry, growth stage, and project phase.</li>
+<li><strong>A KPI (Key Performance Indicator) </strong> is a measurable value that indicates whether a team/company is reaching its targets (benchmarks).</li>
+<li><strong>The five main types of KPIs </strong> are business KPIs, financial KPIs, sales KPIs, marketing KPIs, and project management KPIs.</li>
+<li><strong>KPIs are frequently monitored </strong> with a real-time reporting tool – KPI dashboard.</li>
+<li><strong>Each KPI your monitor should meet the SMART criteria </strong>, i.e. be Specific, Measurable, Attainable, Relevant, and Time-Bound.</li>
+<li><strong>Only track the metrics that are relevant</strong> to your organization and business goals.</li>
+</ul>
+<div id="financial-perspective" class="section level2">
+<h2><span class="header-section-number">5.1</span> Financial Perspective</h2>
+<p>Based on the size, age, and industry, each and every company needs to be conscious of their financial situation. The fastest and most efficient way to keep track of a company business performance is to set up a KPI that displays financial concern. Let’s started with the most widely used financial metrics that have the full spectrum of important budget.</p>
+<p>Firstly, we need to understand the concept of balance sheet. Below is the example of complete balance sheet.</p>
+<div class="figure">
+<img src="bs.PNG" />
+
+</div>
+<div id="operating-cash-flow-ocf" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Operating Cash Flow (OCF)</h3>
+<p>How much money generated by the regular operating activities of a business in a specific time period.</p>
+<p><code>Formula (short form)</code>: Operating Cash Flow = Net Income + Non-Cash Expenses – Increase in Working Capital</p>
+<p><code>Formula (long form)</code> : Operating Cash Flow = Net Income + Depreciation + Stock Based Compensation + Deferred Tax + Other Non Cash Items – Increase in Accounts Receivable – Increase in Inventory + Increase in Accounts Payable + Increase in Accrued Expenses + Increase in Deferred Revenue</p>
+<p>Below is an example of operating cash flow (OCF) using Amazon’s 2017 annual report.</p>
+<div class="figure">
+<img src="amazon.png" />
+
+</div>
+<p>Let’s analyze how the operating section counts:</p>
+<ul>
+<li>Net income from the bottom of the income statement is used as the starting point</li>
+<li>All non-cash items are “added back” meaning any accruals are reversed, including:
+<ul>
+<li>Depreciation, which an accounting method for expensing property, plant, and equipment (PP&amp;E) purchases</li>
+<li>Stock-based compensation is not paid out with actual cash, but instead with the issuance of shares</li>
+<li>Other expense/income could include various items such as unrealized gains or losses or accrued items</li>
+<li>Deferred taxes arise from the difference between accounting methods companies use when filing their taxes vs their financial statements</li>
+</ul></li>
+</ul>
+</div>
+<div id="current-ratio" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Current Ratio</h3>
+<p>The ability to pay all the financial obligations in one year. A healthy Current Ratio is between 1.5 and 3</p>
+<p><code>Formula</code>: Current Ratio = Current Assets / Current Liabilities</p>
+<p>Example of the Current Ratio Formula:</p>
+<p>A business has:</p>
+<ul>
+<li>Cash = $15 million</li>
+<li>Marketable securities = $20 million</li>
+<li>Inventory = $25 million</li>
+<li>Short-term Debt = $15 million</li>
+<li>Accounts Payables = $15 million</li>
+</ul>
+<p>then,</p>
+<ul>
+<li>Current assets = 15 + 20 + 25 = 60 million</li>
+<li>Current liabilities = 15 + 15 = 30 million</li>
+<li>Current ratio = 60 million / 30 million = 2.0x</li>
+</ul>
+<p>The company can easily settle each accounts payable twice.</p>
+</div>
+<div id="ratio-acid-test" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Ratio / Acid Test</h3>
+<p>Indicates whether a business has sufficient short-term assets to cover its near-future liabilities. The quick ratio deleted liquid assets such as inventories.</p>
+<p><code>A common alternative quick ratio formula is</code>: (Current assets – Inventory) / Current Liabilities</p>
+<p>Example:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>$60</td>
+<td>Accounts Payable</td>
+<td>$30</td>
+</tr>
+<tr class="even">
+<td>Marketable Securities</td>
+<td>$10</td>
+<td>Expenses</td>
+<td>$20</td>
+</tr>
+<tr class="odd">
+<td>Account Receivables</td>
+<td>$40</td>
+<td>Notes Payable</td>
+<td>$5</td>
+</tr>
+<tr class="even">
+<td>Inventory</td>
+<td>$50</td>
+<td>Long Term Debt</td>
+<td>$10</td>
+</tr>
+<tr class="odd">
+<td>Total Current Assets</td>
+<td>$160</td>
+<td>Total Current Liabilities</td>
+<td>$65</td>
+</tr>
+</tbody>
+</table>
+<p>The Company quick ratio as follows:</p>
+<p>($60,000 + $10,000 + $40,000) / $65,000 = 1.7</p>
+<p>This means that for every money of Company current liabilities, the firm has $1.70 of very liquid assets to cover those immediate obligations.</p>
+</div>
+<div id="burn-rate" class="section level3">
+<h3><span class="header-section-number">5.1.4</span> Burn Rate</h3>
+<p>Burn rate is the amount of time it will take a company to exhaust the capital. Burn Rate is also in terms of cash burned per month, year , or quarterly.</p>
+<p><code>Formula</code>: Burn Rate= Cash / Expenses</p>
+<p>There are two types of burn rates: net burn and gross burn.</p>
+<ul>
+<li>gross burn: the total amount of operating costs it include in expenses each month.</li>
+<li>net burn: the total amount of money a company loses each month.</li>
+</ul>
+<p>Example:</p>
+<p>A company spends $5,000 monthly on office space, $10,000 on monthly server costs and $15,000 on salaries and wages for its engineers, its gross burn rate would be $30,000.</p>
+<p>However, if the company was already producing revenue, its net burn would be different. Even if the company operates at a loss, with revenues of $20,000 a month and costs of goods sold (COGS) of $10,000, it would still work to reduce its overall burn. In this scenario, the company’s net burn would be $20,000, derived as: $20,000 - $10,000 - $30,000 = $20,000.</p>
+</div>
+<div id="net-profit-margin" class="section level3">
+<h3><span class="header-section-number">5.1.5</span> Net Profit Margin</h3>
+<p>Indicates how efficient a company at generating profit compared to its revenue.</p>
+<p><code>Formula</code>: Net profit margin = net profit / revenue</p>
+<p>Check this example:</p>
+<p>Company ABC and DEF both operate in the same industry. Which company has a higher net profit margin?</p>
+<table>
+<thead>
+<tr class="header">
+<th>Company ABC</th>
+<th>Income Statement</th>
+<th>Company DEF</th>
+<th>Income Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Revenue</td>
+<td>$100</td>
+<td>Revenue</td>
+<td>$225</td>
+</tr>
+<tr class="even">
+<td>Cost of Goods Sold</td>
+<td>$20 __-</td>
+<td>Cost of Goods Sold</td>
+<td>$35 __-</td>
+</tr>
+<tr class="odd">
+<td>Gross Profit</td>
+<td>$80</td>
+<td>Gross Profit</td>
+<td>$195</td>
+</tr>
+<tr class="even">
+<td>Operating Expenses</td>
+<td>$20 __-</td>
+<td>Operating Expenses</td>
+<td>$40 __-</td>
+</tr>
+<tr class="odd">
+<td>Operating Profit</td>
+<td>$60</td>
+<td>Operating Profit</td>
+<td>$150</td>
+</tr>
+<tr class="even">
+<td>Interest Expense</td>
+<td>$5 __-</td>
+<td>Interest Expense</td>
+<td>$10 __-</td>
+</tr>
+<tr class="odd">
+<td>Earnings Before Taxes</td>
+<td>$55</td>
+<td>Earnings Before Taxes</td>
+<td>$140</td>
+</tr>
+<tr class="even">
+<td>Tax Expense</td>
+<td>$25 __-</td>
+<td>Tax Expense</td>
+<td>$60 __-</td>
+</tr>
+<tr class="odd">
+<td>Net Income</td>
+<td>$30</td>
+<td>Net Income</td>
+<td>$80</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 1 </strong>: Write out the formula</p>
+<p>Net Profit Margin = Net Profit/Revenue</p>
+<p><strong>Step 2 </strong>: Calculate the net profit margin for each company</p>
+<p>Company XYZ:</p>
+<p>Net Profit Margin = Net Profit/Revenue = $30/$100 = 30%</p>
+<p>Company ABC:</p>
+<p>Net Profit Margin = Net Profit/Revenue = $80/$225 = 35.56%</p>
+<p><strong>Company ABC has a higher net profit margin. </strong></p>
+</div>
+<div id="working-capital" class="section level3">
+<h3><span class="header-section-number">5.1.6</span> Working Capital</h3>
+<p>The difference between a current assets (like cash and goods) and current liabilities (like debts or obligations).</p>
+<p><code>Formula</code>: Working Capital = Current Assets - Current Liabilities</p>
+<p>Example:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>$60</td>
+<td>Accounts Payable</td>
+<td>$30</td>
+</tr>
+<tr class="even">
+<td>Marketable Securities</td>
+<td>$10</td>
+<td>Expenses</td>
+<td>$20</td>
+</tr>
+<tr class="odd">
+<td>Account Receivables</td>
+<td>$40</td>
+<td>Notes Payable</td>
+<td>$5</td>
+</tr>
+<tr class="even">
+<td>Inventory</td>
+<td>$50</td>
+<td>Long Term Debt</td>
+<td>$10</td>
+</tr>
+<tr class="odd">
+<td>Total Current Assets</td>
+<td>$160</td>
+<td>Total Current Liabilities</td>
+<td>$65</td>
+</tr>
+</tbody>
+</table>
+<p>Using the formula,the working capital ist:</p>
+<p><strong>$160 - $65,000 = $95 </strong></p>
+</div>
+<div id="current-accounts-receivable" class="section level3">
+<h3><span class="header-section-number">5.1.7</span> Current Accounts Receivable</h3>
+<p>How much money owed by its debtors. This account receivable helps to estimate the upcoming income.</p>
+<p>Let`s take a look the part of balance sheets.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>$60</td>
+<td>Accounts Payable</td>
+<td>$30</td>
+</tr>
+<tr class="even">
+<td>Marketable Securities</td>
+<td>$10</td>
+<td>Expenses</td>
+<td>$20</td>
+</tr>
+<tr class="odd">
+<td><strong>Account Receivables </strong></td>
+<td>$40</td>
+<td>Notes Payable</td>
+<td>$5</td>
+</tr>
+<tr class="even">
+<td>Inventory</td>
+<td>$50</td>
+<td>Long Term Debt</td>
+<td>$10</td>
+</tr>
+<tr class="odd">
+<td>Total Current Assets</td>
+<td>$160</td>
+<td>Total Current Liabilities</td>
+<td>$65</td>
+</tr>
+</tbody>
+</table>
+<p>The account receivable ist $40.</p>
+</div>
+<div id="current-accounts-payable" class="section level3">
+<h3><span class="header-section-number">5.1.8</span> Current Accounts Payable</h3>
+<p>How much money owed by its creditors (bank, suppliers, . This account receivable helps to estimate the upcoming expenses.</p>
+<p>Let`s take a look the part of balance sheets.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>$60</td>
+<td>Accounts Payable</td>
+<td>$30</td>
+</tr>
+<tr class="even">
+<td>Marketable Securities</td>
+<td>$10</td>
+<td>Expenses</td>
+<td>$20</td>
+</tr>
+<tr class="odd">
+<td>Account Receivables</td>
+<td>$40</td>
+<td><strong>Notes Payable </strong></td>
+<td>$5</td>
+</tr>
+<tr class="even">
+<td>Inventory</td>
+<td>$50</td>
+<td>Long Term Debt</td>
+<td>$10</td>
+</tr>
+<tr class="odd">
+<td>Total Current Assets</td>
+<td>$160</td>
+<td>Total Current Liabilities</td>
+<td>$65</td>
+</tr>
+</tbody>
+</table>
+<p>The account payable ist $5.</p>
+</div>
+<div id="inventory-turnover" class="section level3">
+<h3><span class="header-section-number">5.1.9</span> Inventory Turnover</h3>
+<ul>
+<li>How efficiently a company sells and replaces its inventory during period of time (daily, monthly, or yearly.</li>
+<li>The bility to generate sales and quickly re-stock.</li>
+</ul>
+<p><code>Formula</code>: Inventory Turnover = Sales / Inventory or Inventory Turnover = Cost of Goods Sold / Average Inventory</p>
+<p>Example:</p>
+<p>Berlin’s Paper Company sells office paper. During the current year, Berlin reported cost of goods sold on its income statement of $1,000,000. Berlin’s beginning inventory was $3,000,000 and its ending inventory was $4,000,000. Berlin’s turnover is calculated like this:</p>
+<p>Inventory Turnover= 1,000,000/ [(3,000,000+4,000,000)/2)= 0,29</p>
+<p>It means that Berlin Paper Company only sold a third (fast 30%) of its inventory during the year.</p>
+</div>
+<div id="budget-variance" class="section level3">
+<h3><span class="header-section-number">5.1.10</span> Budget Variance</h3>
+<p>A budget variance is a different between the predicted cost or revenue in a given account. (how projected budgets vary compared to actual budget totals). Optimistic forecasting or poor leadership decisions caused significant variance (big variance). This KPI used predictive analytics with mathematical and statistical methoden.</p>
+<p><code>Formula</code>:Predictived Cost - Actual Cost</p>
+<p>Not only the cost but also sales, projects budget, ect.</p>
+</div>
+<div id="sales-growth" class="section level3">
+<h3><span class="header-section-number">5.1.11</span> Sales Growth</h3>
+<p>The growth of sales over a certain period (daily, weekly, quarterly, or yearly).</p>
+<p><code>Formula</code>: Sales Growth= Current Period Net Sales - Prior Period Net Sales) / Prior Period Net Sales * 100</p>
+<p>Example:</p>
+<p>Sales 2018: $10 Mio Sales 2017: $5 Mio</p>
+<p>So, the sales growth is (10-5)/5*100= 100%</p>
+<p>A Sales hat increased by 100% than last years.</p>
+</div>
+<div id="days-sales-outstanding-dso" class="section level3">
+<h3><span class="header-section-number">5.1.12</span> Days Sales Outstanding (DSO)</h3>
+<p>The average number of days required for clients to pay a company. If the DSO is lower, company can focus ordering additional supplies.</p>
+<p><code>Formula</code>: DSO= [Accounts Receivable / Ne Credit Sales] * 365</p>
+<ul>
+<li>Accounts Receivable: $25,000</li>
+<li>Net Credit Sales: $200,000</li>
+</ul>
+<p>So, the DSO is [25/200] *365= 45.63</p>
+<p>It takes 46 days to collect cash from the customers.</p>
+</div>
+<div id="payment-error-rate" class="section level3">
+<h3><span class="header-section-number">5.1.13</span> Payment Error Rate</h3>
+<p>Uncompleted payments due to a lack of approval, poor documentation or a missing reference.</p>
+</div>
+<div id="complete-list" class="section level3">
+<h3><span class="header-section-number">5.1.14</span> Complete List</h3>
+<ul>
+<li>Profit Indicators
+<ul>
+<li>Earnings before Taxes (EBT)</li>
+<li>Earnings before Interest and Taxes (EBIT)</li>
+<li>Earnings before Interest, Taxes and Amortization (ΕΒΙΤΑ)<br />
+</li>
+<li>Profit or Loss from Ordinary Business Operations</li>
+<li>Profit or Loss from Extraordinary Operations</li>
+<li>Operating income from Ordinary Business<br />
+</li>
+<li>Non-operating income from Ordinary Business</li>
+<li>Result from Discontinued Operations<br />
+</li>
+<li>Non-periodic Income<br />
+</li>
+<li>Net Operating Profit After Taxes (NOPAT)</li>
+</ul></li>
+<li>Profitability Indicators
+<ul>
+<li>EBIT-Turnover-Yield<br />
+</li>
+<li>Return On Sales (ROS)<br />
+</li>
+<li>Return On Equity (ROE)</li>
+<li>Return On Assets (ROA)</li>
+<li>Earnings Per Share (EPS)</li>
+<li>Return On Investment (ROI)</li>
+<li>Return On Invested Capital (ROIC)</li>
+<li>Return On Capital Employed (ROCE)</li>
+<li>Return On Net Assets (RONA)</li>
+<li>Risk Adjusted Return On Capital (RAROC)</li>
+<li>Cost-Income Ratio (CIR)</li>
+</ul></li>
+<li>Liquidity Indicators
+<ul>
+<li>Cash Ratio</li>
+<li>Quick Ratio</li>
+<li>Current Ratio</li>
+<li>Working Capital<br />
+</li>
+<li>Cash-burn Rate</li>
+</ul></li>
+<li>Tests of Solvency
+<ul>
+<li>Debt-to-Equity Ratio<br />
+</li>
+<li>Debt-to-Cash Ratio<br />
+</li>
+<li>Interest Coverage Ratio</li>
+</ul></li>
+<li>Cash Flow Measures
+<ul>
+<li>Cash Flow<br />
+</li>
+<li>Gross or Net Cash Flow<br />
+</li>
+<li>Free Cash Flow (FCF)<br />
+</li>
+<li>Operating Cash Flow (OCF)</li>
+<li>Earnings before Interest, Taxes, Depreciation and Amortization (EBITDA)</li>
+</ul></li>
+<li>Cash Flow Ratios
+<ul>
+<li>Cash Flow Margin<br />
+</li>
+<li>Cash Flow Return on Investment (CFROI)</li>
+<li>Cash Flow Return On Equity (CFROE)</li>
+<li>EBITDA-Turnover-Yield<br />
+</li>
+<li>Income-Tax Burden Ratio</li>
+</ul></li>
+<li>Financial Structure Indicators
+<ul>
+<li>Equity-To-Fixed-Assets Ratio (Level I)</li>
+<li>Equity-To-Fixed-Assets Ratio (Level II)</li>
+<li>Equity-To-Fixed-Assets Ratio (Level III)</li>
+<li>Equity Ratio<br />
+</li>
+<li>Financial Leverage Index</li>
+</ul></li>
+<li>Efficiency Ratios
+<ul>
+<li>Average Collection Period</li>
+<li>Average Payment Period<br />
+</li>
+<li>Cash-to-Cash Cycle<br />
+</li>
+<li>Asset Turnover Ratio</li>
+<li>Asset Coverage Period</li>
+</ul></li>
+<li>Value Based Management (VBM)
+<ul>
+<li>Cash Value Added (CVA)<br />
+</li>
+<li>Economic Profit (EP)<br />
+</li>
+<li>Economic Value Added (EVA)<br />
+</li>
+<li>Weighted Average Cost of Capital (WACC)</li>
+</ul></li>
+<li>Capital Market Tests
+<ul>
+<li>Market-to-Book Ratio<br />
+</li>
+<li>Stock Yield<br />
+</li>
+<li>Dividend Yield</li>
+<li>Price-Earnings Ratio (P/E Ratio)</li>
+<li>Price-To-Cash Flow Ratio</li>
+<li>Cash Flow per Share</li>
+</ul></li>
+<li>Capital Budgeting Tests
+<ul>
+<li>Payback Period</li>
+<li>Time Adjusted or Discounted Payback Period</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="customer-perspective" class="section level2">
+<h2><span class="header-section-number">5.2</span> Customer Perspective</h2>
+<p>According to research from walkerinfo.com (customer research consulting), customer satisfication will overtake as the key success. Company require volumes of customers, number contacts, and number employees, and another data as a key factors. It depend on the situation and company business model.</p>
+<p>Below are example of the most using KPI for Customer Perspektive:</p>
+<div id="customer-satisfaction-score-csat" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Customer Satisfaction Score (CSAT)</h3>
+<p>Measuring CSAT is very hard. Customers need to express an emotion, and emotions are harder to indentify than objective facts. CSAT can consist of regular numbers, some icon (like stars, smiley faces, etc).</p>
+<p>Example: Users uses a 5 stars scale for ratings</p>
+<div class="figure">
+<img src="csat.PNG" />
+
+</div>
+</div>
+<div id="net-promoter-score-nps" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Net Promoter Score (NPS)</h3>
+<p>How likely customers are referring the products to someone else.</p>
+<p>Example: Company ask the customers how likely they are to recommend the products on a scale from 1 to 10.</p>
+<div class="figure">
+<img src="nps.PNG" />
+
+</div>
+</div>
+<div id="first-response-time" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> First Response Time</h3>
+<p>Customers are changed like the Spice Girls: “If you wanna get with me, better make it fast!”. The Customers expect an excellent shopping experience. A Salesforce study found that a third of the respondents felt positive about companies that offered a quick first response. First Response Time is calculated by subtracting the time of the request from the time of the initial reply.</p>
+<div class="figure">
+<img src="ftr.PNG" />
+
+</div>
+</div>
+<div id="customer-retention-rate" class="section level3">
+<h3><span class="header-section-number">5.2.4</span> Customer Retention Rate</h3>
+<p>The ability to keep a customer over a set period of time (daily, monthly, yearly).</p>
+<p><code>Formula</code>: Customer Retention Rate = ((CE – CN) / CS)) x 100</p>
+<ul>
+<li>CE = Number of customers at end of period</li>
+<li>CN = Number of new customers acquired during period</li>
+<li>CS = Number of customers at start of period</li>
+</ul>
+</div>
+<div id="employee-engagement" class="section level3">
+<h3><span class="header-section-number">5.2.5</span> Employee Engagement</h3>
+<p>The KPI about employees satisfication. The standars approach ist direct ask. Another method is survei. The survey should consist of the following engagement levels:</p>
+<ul>
+<li>Management quality and time investment</li>
+<li>Influence from colleagues</li>
+<li>Relationships</li>
+<li>Work schedule</li>
+</ul>
+<p>Another example of customer perspektive are:</p>
+<ul>
+<li>Annual sales/customers($)</li>
+<li>Average custome size($)</li>
+<li>Customer rating(%)</li>
+<li>Average time from customer contact to sales response(No)</li>
+<li>Average time spent on customer relations(No)</li>
+<li>Customers/employee ( No or %)</li>
+<li>Satisfied-customer index(%)</li>
+<li>Customer-loyalty index(%)</li>
+<li>Market Share</li>
+<li>No of Customer Complaints</li>
+<li>Return Rates</li>
+<li>Response Time</li>
+<li>Cost/customer($)</li>
+<li>Customers Lost(No or %)</li>
+<li>Customer retention</li>
+<li>Number of customers</li>
+<li>Annual sales per customer</li>
+<li>Marketing cost as a % of sales(%)</li>
+<li>Marketing expenses($)</li>
+<li>Number of proposals made</li>
+<li>Brand-image index (%)</li>
+<li>Response rate</li>
+<li>Sales volume</li>
+<li>Sales per channel</li>
+<li>Average customer size</li>
+<li>Customers per employee</li>
+<li>Frequency of sales transactions</li>
+<li>Sales closed/sales contacts(%)</li>
+<li>Number of visits to customers(No)</li>
+<li>Service expense/customer/year($)</li>
+</ul>
+</div>
+<div id="complete-list-1" class="section level3">
+<h3><span class="header-section-number">5.2.6</span> Complete List</h3>
+<ul>
+<li>Customer Relationship Management (CRM)
+<ul>
+<li>Customer Acquisition Rate 133 3.1.2</li>
+<li>Customer Churn Rate 134 3.1.3</li>
+<li>Customer Retention Period 136 3.1.4</li>
+<li>Customer Significance Level 138 3.1.5</li>
+<li>Cross-Selling Ratio 140 3.1.6</li>
+<li>Customer Lifetime Value (CLV) 141 3.1.7</li>
+<li>Customer Satisfaction Index 143 3.1.8</li>
+<li>Customer Complaint Ratio 146 3.1.9</li>
+<li>Flop Rate</li>
+</ul></li>
+<li>Marketing Communication Indicators
+<ul>
+<li>Media Coverage Level 150 3.2.2</li>
+<li>Click Through Rate (CTR) 152 3.2.3</li>
+<li>Conversion Rate 153 3.2.4</li>
+<li>Cost per Thousand 155 3.2.5</li>
+<li>Brand Awareness Level</li>
+</ul></li>
+<li>Product Pricing
+<ul>
+<li>Profit Margin</li>
+<li>Gross Margin</li>
+<li>Absolute Contribution Margin<br />
+</li>
+<li>Percentage Contribution Margin<br />
+</li>
+<li>Price Reduction Rate<br />
+</li>
+<li>Direct Product Profit (DPP)<br />
+</li>
+<li>Price Elasticity of Demand (PEoD)<br />
+</li>
+<li>Purchasing Power Index</li>
+</ul></li>
+<li>Cost-Profit-Volume Analysis
+<ul>
+<li>Break-Even Point (BEP)<br />
+</li>
+<li>Margin of Safety<br />
+</li>
+<li>Margin of Safety-Factor<br />
+</li>
+<li>Cash Point</li>
+</ul></li>
+<li>Market Coverage Indicators
+<ul>
+<li>Internationalization Level<br />
+</li>
+<li>Distribution Coverage Level</li>
+<li>Customer Coverage Ratio<br />
+</li>
+<li>Market Saturation Level</li>
+</ul></li>
+<li>Market Position Indicators
+<ul>
+<li>Absolute Market Share<br />
+</li>
+<li>Relative Market Share</li>
+<li>Bid Acceptance Rate</li>
+</ul></li>
+<li>Sales Efficiency Indicators
+<ul>
+<li>Sales per Reference Parameter<br />
+</li>
+<li>Contribution Margin per Reference Parameter<br />
+</li>
+<li>Sales Space Productivity<br />
+</li>
+<li>Capacity Coverage Ratio<br />
+</li>
+<li>Book-to-Bill Ratio<br />
+</li>
+<li>Finished Goods Turnover Period</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="process-perspective" class="section level2">
+<h2><span class="header-section-number">5.3</span> Process Perspective</h2>
+<div id="cost-performance-index-cpi" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Cost performance index (CPI)</h3>
+<p>The financial effectiveness and efficiency of a project. For example, if a project has a earned value of £30,000 but actual costs were £12,000.</p>
+<blockquote>
+<p>CPI = EV / AC = 30,000 / 12,000 = 2.5</p>
+</blockquote>
+<p>If the ratio has a value higher than 1 then it indicates the project is performing good.</p>
+</div>
+<div id="schedule-performance-index-spi" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Schedule Performance Index (SPI)</h3>
+<p>Indicates how efficiently the company actually progressing compared to the planned project schedule. It is the efficiency of the time on the project.</p>
+<p><code>Formula</code>: Schedule Performance Index = (Earned Value) / (Planned Value)</p>
+<p>Example:</p>
+<p>A Company have a project to becompleted in 12 months, and the budget of the project is 100,000 USD. Six months have passed, and 60,000 USD has been spent, but on closer review, you find that only 40% of the work has been completed so far.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Given in the question:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Actual Cost (AC) = $60,000</td>
+</tr>
+<tr class="even">
+<td>Planned Value (PV) = 50% of $100,000</td>
+</tr>
+<tr class="odd">
+<td>= $50,000</td>
+</tr>
+<tr class="even">
+<td>Earned Value (EV) = 40% of $100,000</td>
+</tr>
+<tr class="odd">
+<td>= $40,000</td>
+</tr>
+<tr class="even">
+<td>And then,</td>
+</tr>
+<tr class="odd">
+<td>Schedule Performance Index (SPI) = EV / PV</td>
+</tr>
+<tr class="even">
+<td>= 40,000 / 50,000</td>
+</tr>
+<tr class="odd">
+<td>= 0.8</td>
+</tr>
+</tbody>
+</table>
+<p>The Schedule Performance Index is 0.8</p>
+<p>This Company is behind schedule since the Schedule Performance Index is less than one.</p>
+</div>
+<div id="complete-list-2" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Complete List</h3>
+<ul>
+<li>Project Controlling
+<ul>
+<li>Schedule Performance Index (SPI)<br />
+</li>
+<li>Cost Performance Index (CPI)</li>
+<li>Time Estimation at Completion (TEAC)</li>
+<li>Estimate at Completion (EAC)</li>
+<li>To-Complete-Performance Index (TCPI)<br />
+</li>
+<li>Process Acceleration Costs</li>
+</ul></li>
+<li>Quality Controlling
+<ul>
+<li>Quality Rate</li>
+<li>Rejection Rate</li>
+<li>Follow-up Costs Ratio<br />
+</li>
+<li>Conformity Costs Ratio<br />
+</li>
+<li>Non-Conformity Costs Ratio</li>
+</ul></li>
+<li>Supply Chain Management
+<ul>
+<li>Procurement Efficiency Ratio<br />
+</li>
+<li>Supply Chain Cycle Time<br />
+</li>
+<li>Faulty Incoming Delivery Rate<br />
+</li>
+<li>Faulty Outgoing Delivery Rate</li>
+<li>Vertical Integration Level<br />
+</li>
+<li>Supplier’s Service Level</li>
+<li>Cooperation Index</li>
+</ul></li>
+<li>Production Capacity Management
+<ul>
+<li>Plant Availability Time<br />
+</li>
+<li>Plant Downtime Rate 236</li>
+<li>Maintenance Cost Intensity<br />
+</li>
+<li>Capacity Utilization Level<br />
+</li>
+<li>Contribution Margin per Unit of the Constrained Resource</li>
+</ul></li>
+<li>Process Controlling
+<ul>
+<li>Throughput Time (TPT)</li>
+<li>Days Inventory Outstanding (DIO)<br />
+</li>
+<li>Inventory Turnover Ratio<br />
+</li>
+<li>Material Coverage Period<br />
+</li>
+<li>Process Cost Rate</li>
+<li>Expected Process-based Loss</li>
+<li>Machine Hour Rate<br />
+</li>
+<li>Bottleneck-induced Incremental Costs</li>
+</ul></li>
+<li>Sustainability Management
+<ul>
+<li>Resource Consumption Level<br />
+</li>
+<li>Resource Consumption Efficiency Level<br />
+</li>
+<li>Sustainable Value</li>
+<li>Emission Volume of Production-related Pollutants</li>
+<li>Emission Volume of Usage-related Pollutants<br />
+</li>
+<li>Disposal Costs Ratio<br />
+</li>
+<li>Recycling Ratio</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="human-resource-and-innovation-perspective" class="section level2">
+<h2><span class="header-section-number">5.4</span> Human Resource and Innovation Perspective</h2>
+<p><strong>Retention </strong></p>
+<p>The basic formula for employee retention is the following:</p>
+<blockquote>
+<p>(# of employees who stayed at the company for the whole time period)/(# employees at start of the time period) X 100</p>
+</blockquote>
+<p>Example : If 90 people were working at my company as of June 1st and 80 of those same people were still working at my company as of June 30th, my retention rate for the month of June would be the following: 80/90 * 100 = 88.9%</p>
+<p><strong>Time in The Position </strong> How long are employees in the same position</p>
+<p><strong>Absenteeism </strong></p>
+<ul>
+<li>Delays</li>
+<li>Sick leave</li>
+<li>Excused or unexcused absenses</li>
+</ul>
+<p><strong>Recruitment Time </strong></p>
+<p>Time between employee leaving and another candidate selected to replace him.</p>
+<p><strong>Education </strong></p>
+<p>The courses for employee that has direct impact on the company performances.</p>
+<p><strong>Time to Achieve Goals </strong></p>
+<p>The efficiency of the workforce to see how long it takes to finish the tasks.</p>
+<p><strong>Accidents at Work </strong></p>
+<p>The number of accidents in the workplace.</p>
+<p><strong>Complete List: </strong></p>
+<ul>
+<li>Personnel Cost Management
+<ul>
+<li>Personnel Costs Ratio 283 5.1.2</li>
+<li>Supplementary Personnel Costs Ratio 285 5.1.3</li>
+<li>Personnel Costs per Employee 287 5.1.4</li>
+<li>Unit Labor Cost</li>
+</ul></li>
+<li>Human Resource Controlling
+<ul>
+<li>Labor Productivity</li>
+<li>Overtime Quota<br />
+</li>
+<li>Workforce Composition Ratios<br />
+</li>
+<li>Internally-staffed Executive Positions Ratio</li>
+<li>Staff Recruitment Period</li>
+</ul></li>
+<li>Human Resource Development Indicators
+<ul>
+<li>Apprenticeship Quota</li>
+<li>Trainee Absorption Rate</li>
+<li>Professional Development Training Time per Employee<br />
+</li>
+<li>Professional Development Training Costs Ratio</li>
+</ul></li>
+<li>Organizational Behavior Indicators
+<ul>
+<li>Labor Turnover Rate<br />
+</li>
+<li>Employees Satisfaction Index<br />
+</li>
+<li>Sickness-Absenteeism Rate</li>
+<li>Accident Occurrence Rate<br />
+</li>
+<li>Participation Rate in Ideas Management</li>
+</ul></li>
+<li>Innovativeness
+<ul>
+<li>Innovation Rate<br />
+</li>
+<li>Research and Development Intensity (R&amp;D Intensity)</li>
+<li>Research and Development Costs Ratio (R&amp;D Costs Ratio)<br />
+</li>
+<li>Break-Even Time</li>
+</ul></li>
+</ul>
+</div>
+<div id="by-industry" class="section level2">
+<h2><span class="header-section-number">5.5</span> By Industry</h2>
+<div id="t-l-industry" class="section level3">
+<h3><span class="header-section-number">5.5.1</span> T &amp; L Industry</h3>
+<p>Example KPIs for the Transportation and Logistic (Warehousing) Industry:</p>
+<ul>
+<li>Annualized inventory turns: a ratio showing how many times a company has sold and replaced inventory during a given period (years, months, 10 years).</li>
+<li>Annualized cost of goods sold (COGS)/average daily inventory value</li>
+<li>Backlog value</li>
+<li>Value of open, not yet fulfilled, booked order lines</li>
+<li>Book to fulfill ratio</li>
+<li>Booked order value/fulfilled value</li>
+<li>Book to ship days</li>
+<li>Average of shipped date - Firm date (booked date used if no firmed date)</li>
+<li>Booked order value</li>
+<li>Booked order line value (not including returns)</li>
+<li>Claims percentage for freight costs</li>
+<li>Customer order promised cycle time</li>
+<li>Defects per million opportunities</li>
+<li>Inventory months of supply</li>
+<li>On-time line count</li>
+<li>On-time pickups</li>
+<li>Pick exceptions rate</li>
+<li>Percentage of picks with exceptions</li>
+<li>Pick release to ship</li>
+<li>Planned inventory turns</li>
+<li>Planned cost of goods sold/planned inventory value</li>
+<li>Planned margin</li>
+<li>Planned revenue - Planned costs</li>
+<li>Planned margin percentage</li>
+<li>Planned margin/planned revenue</li>
+<li>Planned on-time shipment</li>
+<li>Planned service level (percentage of shipments shipped on time)</li>
+<li>Planned resource utilization</li>
+<li>Planned resource usage</li>
+<li>Product revenue</li>
+<li>Product sales revenue (not including service) recognized in selected period (based on AR invoice lines)</li>
+<li>Product revenue backlog</li>
+<li>Value of booked order lines less returns plus deferred revenue backlog (invoiced but not recognized) Production value</li>
+<li>Value of work-in-process (WIP) completions into inventory</li>
+<li>Production to plan rate</li>
+<li>Production standard value/planned standard value</li>
+<li>Receipt to put-away</li>
+<li>Time elapsed from pick release to ship confirm</li>
+<li>Time elapsed from receipt</li>
+<li>Transit time</li>
+</ul>
+</div>
+<div id="wholesale-trade" class="section level3">
+<h3><span class="header-section-number">5.5.2</span> Wholesale Trade</h3>
+<p>Example KPIs for the Wholesale Trade Industry:</p>
+<ul>
+<li>Dock turnaround time</li>
+<li>Freight costs (minimize costs without affecting deliveries)</li>
+<li>Inventory accuracy, stockouts</li>
+<li>Inventory carrying costs</li>
+<li>Inventory turns per year</li>
+<li>Logistics costs per year</li>
+<li>Low-velocity inventory comparison through sectors</li>
+<li>Order fill rate and accuracy</li>
+<li>Technology used to execute inventory strategies</li>
+<li>Warehouse flow-through (or some measure of yard or warehouse productivity)</li>
+<li>Wholesale revenue</li>
+<li>Total factor productivity</li>
+<li>Labor productivity</li>
+<li>Return on assets</li>
+<li>Profit margin</li>
+<li>Debt to equity</li>
+<li>Inventory turnover</li>
+<li>Asset utilization</li>
+<li>Collection efficiency</li>
+</ul>
+</div>
+<div id="utilities-industry" class="section level3">
+<h3><span class="header-section-number">5.5.3</span> Utilities Industry</h3>
+<p>Example KPIs for the Utilities Industry:</p>
+<ul>
+<li>Annual labor cost per device</li>
+<li>Average cost per job category</li>
+<li>Average cost per megawatt produced</li>
+<li>Average labor hours per device per year</li>
+<li>Average maintenance cost per mile of pipe/line/cable</li>
+<li>Average number of days each work order is past due</li>
+<li>Average number of labor hours to complete a maintenance task</li>
+<li>Average response time to fix breaks</li>
+<li>Average revenue per megawatt produced</li>
+<li>Average time to settle a rate case</li>
+<li>Consumption analyzed by units consumed and target reduction achieved</li>
+<li>Crew productivity</li>
+<li>Drinking water quality - Percentage of water tests that meet regulatory standards</li>
+<li>Electrical grid load</li>
+<li>Equipment failure rate</li>
+<li>Equipment unavailability, hours per year - Planned maintenance</li>
+<li>Equipment unavailability, hours per year - Sustained fault</li>
+<li>Equipment unavailability, hours per year - Temporary fault</li>
+<li>Equipment unavailability, hours per year - Unplanned maintenance</li>
+<li>Maintenance backlog</li>
+<li>Maintenance cost as a percentage of manufacturing cost</li>
+<li>Maintenance technician’s skill level improvement, year over-year</li>
+<li>Mean time to repair</li>
+<li>Number of complaints received by type</li>
+<li>Number of customers who were cut off due to violations of regulations</li>
+<li>Number of disconnections</li>
+<li>Number of pending work orders</li>
+<li>Number of power failures per year</li>
+<li>Number of reported gas leakages per 1,000 households</li>
+<li>Number of sewage blockages per month/year</li>
+<li>Number of staff per 1,000 customer connections</li>
+<li>Number of uncontrolled sewage overflows affecting private properties</li>
+<li>Outage time per event</li>
+<li>Percentage of customers that would characterize their bills as accurate and timely</li>
+<li>Percentage of possible power revenue billed</li>
+<li>Percentage reduction in number of complaints to the local regulatory body</li>
+<li>Percentage reduction in number of employee injuries</li>
+<li>Percentage reduction in number of equipment failures</li>
+<li>Percentage of maintenance work orders requiring rework</li>
+<li>Percentage of man-hours used for proactive work</li>
+<li>Percentage of scheduled man-hours to total man-hours</li>
+<li>Profit redistribution (rural electric coops)</li>
+<li>Reduction in hazardous liquid spill notification time</li>
+<li>Reduction or stabilization in rates (municipally owned utilities)</li>
+<li>Response time to gas or water leaks</li>
+<li>Sewage system reliability</li>
+<li>Station unavailability - Planned maintenance</li>
+<li>Station unavailability - Sustained fault</li>
+<li>Station unavailability - Temporary fault</li>
+<li>Total shareholder returns (investor-owned utilities)</li>
+<li>Total time to complete new customer connections</li>
+<li>Transformer/pump station reliability</li>
+<li>Voltage deviations per year</li>
+<li>Water system reliability</li>
+</ul>
+</div>
+<div id="retail-industry" class="section level3">
+<h3><span class="header-section-number">5.5.4</span> Retail Industry</h3>
+<p>Example KPIs for the Retail Trade Industry:</p>
+<p><strong>PRODUCT SALES </strong></p>
+<ul>
+<li>Average inventory</li>
+<li>Cost of goods sold</li>
+<li>Gross profit budget percentage</li>
+<li>Sales budget percentage</li>
+<li>Discount</li>
+<li>Gross profit</li>
+<li>Gross profit and prognostics</li>
+<li>Gross profit and prognostics percentage</li>
+<li>Gross profit budget</li>
+<li>Gross profit campaign</li>
+<li>Gross profit percentage KPI</li>
+<li>Gross profit prognostics</li>
+<li>Gross profit prognostics percentage</li>
+<li>Gross profit standard</li>
+<li>Gross profit year to date</li>
+<li>Number of stores</li>
+<li>Product quantity</li>
+<li>Sales</li>
+<li>Sales and prognostics</li>
+<li>Sales campaign</li>
+<li>Sales growth period</li>
+<li>Sales growth year</li>
+<li>Sales growth year by week</li>
+<li>Sales prognostics</li>
+<li>Sales standard</li>
+<li>Sales trend percentage KPI</li>
+<li>Sales value-added tax (VAT)</li>
+<li>Sales view</li>
+<li>Sales view year-to-date</li>
+<li>Share prognostics</li>
+<li>Time range</li>
+</ul>
+<p><strong>FINANCE AND ACCOUNTING </strong></p>
+<ul>
+<li>Accounts payable turnover</li>
+<li>Accounts receivable turnover days</li>
+<li>Acid test ratio</li>
+<li>Administrative cost percentage</li>
+<li>Break-even (dollars)</li>
+<li>Cash conversion cycle</li>
+<li>Contribution margin</li>
+<li>Cost of goods</li>
+<li>Cost of goods sold</li>
+<li>Current ratio</li>
+<li>Ending inventory at retail</li>
+<li>Gross margin</li>
+<li>Gross margin return on investment</li>
+<li>Initial mark-up</li>
+<li>Interest cost percentage</li>
+<li>Inventory turnover</li>
+<li>Maintained mark-up (dollars)</li>
+<li>Margin percentage</li>
+<li>Mark-up percentage</li>
+<li>Net receipts</li>
+<li>Net sales</li>
+<li>Retail price</li>
+<li>Return on capital invested</li>
+<li>Sales per square foot</li>
+<li>Stock turnover days</li>
+<li>Total asset sales ratio</li>
+<li>Turnover</li>
+</ul>
+<p><strong>SALARY </strong></p>
+<ul>
+<li>Real absence hours</li>
+<li>Real absence share</li>
+<li>Real GPWH</li>
+<li>Real overtime hours</li>
+<li>Real overtime share</li>
+<li>Real TWH</li>
+<li>Real working hours</li>
+<li>Salary</li>
+<li>Salary amount</li>
+<li>Salary amount exchange currency</li>
+<li>Salary hours</li>
+<li>Salary turnover share</li>
+</ul>
+<p><strong>SALARY TARGETS </strong></p>
+<ul>
+<li>Real absence hours</li>
+<li>Real GP work hours</li>
+<li>Real total work hours</li>
+<li>Salary absence percentage</li>
+<li>Salary GP work hour</li>
+<li>Salary overtime percentage</li>
+<li>Salary target absence percentage</li>
+<li>Salary target GP work hour</li>
+<li>Salary target overtime percentage</li>
+<li>Salary target turnover percentage</li>
+<li>Salary target work hour</li>
+<li>Salary turnover percentage</li>
+</ul>
+<p><strong>HOURLY SALES </strong></p>
+<ul>
+<li>Customers per hour</li>
+<li>Discount</li>
+<li>Gross profit</li>
+<li>Items</li>
+<li>Margin per customer</li>
+<li>Number of customers</li>
+<li>Sales growth year</li>
+<li>Sales growth year percentage</li>
+<li>Sales last year</li>
+<li>Sales per customer</li>
+<li>Sales trend percentage</li>
+<li>Sales view</li>
+<li>Total number of stores</li>
+</ul>
+<p><strong>BUDGET SALES </strong></p>
+<ul>
+<li>Budget gross profit</li>
+<li>Budget number of customers</li>
+<li>Budget sales</li>
+<li>Customers</li>
+<li>Discount</li>
+<li>Gross profit</li>
+<li>Items</li>
+<li>Sales</li>
+<li>Sales exchange currency</li>
+<li>Sales VAT</li>
+</ul>
+<p><strong>PAYMENT WITH POINT-OF-SALE (POS) STATISTICS </strong></p>
+<ul>
+<li>Amount</li>
+<li>Amount exchange currency</li>
+<li>Items</li>
+<li>Number of customers</li>
+<li>Number of items</li>
+<li>Refund amount</li>
+<li>Refund count</li>
+<li>Sales income VAT</li>
+<li>Time range</li>
+<li>Transaction cancel amount</li>
+<li>Transaction cancel count</li>
+<li>Transaction cancel percentage</li>
+<li>Void amount</li>
+<li>Void count</li>
+<li>Void percentage</li>
+<li>Zero sale count</li>
+</ul>
+<p><strong>HOURLY PRODUCT SALES </strong></p>
+<ul>
+<li>Gross profit percentage</li>
+<li>Item discount</li>
+<li>Item gross profit</li>
+<li>Item quantity</li>
+<li>Item sales</li>
+<li>Item sales exchange currency</li>
+<li>Item sales VAT</li>
+<li>Items sold</li>
+</ul>
+</div>
+<div id="real-estate-and-rental-and-leasing" class="section level3">
+<h3><span class="header-section-number">5.5.5</span> Real Estate and Rental and Leasing</h3>
+<p>Example KPIs for the Real Estate and Rental and Leasing Industry:</p>
+<p><strong>REALTOR WEBSITE </strong></p>
+<ul>
+<li>Conversation rate (i.e., take rate) - Number of conversations over number of website visits</li>
+<li>Top conversion page exit - The page where website visitors change their minds and exit your website.</li>
+<li>Traffic source percentage - Website visits referred by</li>
+</ul>
+<p><strong>REAL ESTATE OFFICE </strong></p>
+<ul>
+<li>Advertising and promotion</li>
+<li>Average commission per sale</li>
+<li>Average commission per salesperson</li>
+<li>Commission margin</li>
+<li>Net profit</li>
+<li>Office cost (telephone, fax, and other office cost)</li>
+<li>Rent cost of premises</li>
+<li>Sold homes per available inventory ratio</li>
+<li>Total income</li>
+<li>Wages and salaries (including commissions and vehicle allowances)</li>
+<li>Year-to-year variance on average sold price</li>
+<li>Year-to-year variance on dollar volume of sold listings</li>
+<li>Year-to-year variance on sold average dollar per square foot</li>
+</ul>
+<p><strong>COMMERCIAL PROPERTY MANAGEMENT </strong></p>
+<ul>
+<li>Annual return on investment in percentage</li>
+<li>Construction/purchaser rate - New constructed or purchased units over time</li>
+<li>Cost per square foot</li>
+<li>Equity value growth in percentage</li>
+<li>Lease events coverage ratio - Number of lease inquiries over number of available units</li>
+<li>Management efficiency - Number of leased spaces over number of staff</li>
+<li>Market share growth</li>
+<li>Monthly return on investment as percentage</li>
+<li>Occupancy cost - Cost per occupied unit</li>
+<li>Operation cost to rent income ratio</li>
+<li>Percentage of rent collected</li>
+<li>Price to income as percentage</li>
+<li>Profitability per square foot</li>
+<li>Real estate demand growth - Market rental demands</li>
+<li>Rented space usage quality - Average number of tenant visits over rented space</li>
+<li>Renting cost - Renting cost per square foot</li>
+<li>Renting return on investment - Rent income over cost</li>
+<li>Revenue per square foot</li>
+<li>Risk metrics as percentage</li>
+<li>Total property management income per property manager</li>
+<li>Usage efficiency - Available renting square feet over number of staff</li>
+<li>Utilization (vacancy) rate - Rented square feet over total square feet, or rented units over total units</li>
+</ul>
+<p><strong>REAL ESTATE INVESTOR </strong></p>
+<ul>
+<li>Average gross multiplier for portfolio</li>
+<li>Cost per square foot to value per square foot ratio</li>
+<li>Equity to value ratio</li>
+<li>Gross multiplier per commercial property</li>
+<li>LTV (loan to value) ratio per property</li>
+<li>Mortgage rate index</li>
+<li>Overall LTV (loan to value) ratio for portfolio</li>
+<li>Price per square foot to value per square foot ratio</li>
+<li>Profitability per square foot</li>
+<li>Property value growth (market trend)</li>
+<li>Purchase price-to-appraisal value ratio</li>
+<li>Rental value growth rate ROI (return on investment)</li>
+</ul>
+</div>
+<div id="manufacturing-industry" class="section level3">
+<h3><span class="header-section-number">5.5.6</span> Manufacturing Industry</h3>
+<p>Example KPIs for the Manufacturing Industry:</p>
+<ul>
+<li>Asset utilization</li>
+<li>Availability</li>
+<li>Avoided cost</li>
+<li>Capacity utilization</li>
+<li>Comparative analytics for products, plants, divisions, companies</li>
+<li>Compliance rates (for government regulations, etc.)</li>
+<li>Customer complaints</li>
+<li>Customer satisfaction</li>
+<li>Cycle time</li>
+<li>Demand forecasting</li>
+<li>Faults detected prior to failure</li>
+<li>First aid visits</li>
+<li>First time through</li>
+<li>Forecasts of production quantities, etc.</li>
+<li>Increase/decrease in plant downtime</li>
+<li>Industry benchmark performance</li>
+<li>Integration capabilities</li>
+<li>Interaction level Inventory</li>
+<li>Job, product costing</li>
+<li>Labor as a percentage of cost</li>
+<li>Labor usage, costs-direct and indirect</li>
+<li>Machine modules reuse</li>
+<li>Maintenance cost per unit</li>
+<li>Manufacturing cost per unit</li>
+<li>Material costing, usage</li>
+<li>Mean time between failure (MTBF)</li>
+<li>Mean time to repair</li>
+<li>Number of production assignments completed in time</li>
+<li>On-time orders</li>
+<li>On-time shipping</li>
+<li>Open orders</li>
+<li>Overall equipment effectiveness</li>
+<li>Overall production efficiency of a department, plant, or division</li>
+<li>Overtime as a percentage of total hours</li>
+<li>Percentage decrease in inventory carrying costs</li>
+<li>Percentage decrease in production-to-market lead-time</li>
+<li>Percentage decrease in scrap and rework costs</li>
+<li>Percentage decrease in standard production hours</li>
+<li>Percentage increase in productivity</li>
+<li>Percentage increase in revenues</li>
+<li>Percentage material cost reduction</li>
+<li>Percentage reduction in defect rates</li>
+<li>Percentage reduction in downtime</li>
+<li>Percentage reduction in inventory levels</li>
+<li>Percentage reduction in manufacturing lead times</li>
+<li>Percentage savings in costs</li>
+<li>Percentage savings in inventory costs</li>
+<li>Percentage savings in labor costs</li>
+<li>Percentage savings in transportation costs</li>
+<li>Planned work to total work ratio</li>
+<li>Predictive maintenance monitoring (maintenance events per cycle)</li>
+<li>Process capability</li>
+<li>Productivity</li>
+<li>Quality improvement (first-pass yield)</li>
+<li>Quality tracking-six sigma</li>
+<li>Reduced time to productivity</li>
+<li>Reduction in penalties</li>
+<li>Savings in inventory carrying costs</li>
+<li>Scheduled production</li>
+<li>Spend analytics</li>
+<li>Storehouse stock effectiveness</li>
+<li>Supplier trending</li>
+<li>Time from order to shipment</li>
+<li>Time on floor to be packed</li>
+<li>Unplanned capacity expenditure</li>
+<li>Unused capacity expenditures</li>
+<li>Utilization</li>
+<li>Waste ration reduction</li>
+<li>Work-in-process (WIP)</li>
+</ul>
+<p><strong>INSURANCE </strong></p>
+<ul>
+<li>Average insurance policy size</li>
+<li>Claims</li>
+<li>Combined cost and claims ratio</li>
+<li>Combined ratio</li>
+<li>Current premium versus loss</li>
+<li>Earned premium</li>
+<li>Expense ratio</li>
+<li>Expenses</li>
+<li>Exposure</li>
+<li>Loss adjustment expenses (LAE)</li>
+<li>Loss ratio</li>
+<li>Number of days open of insurance claims</li>
+<li>Number of new insurance policies</li>
+<li>Previous premium versus loss</li>
+<li>Underwriting speed of insurances</li>
+<li>Written premium</li>
+</ul>
+</div>
+<div id="finance-and-insurance" class="section level3">
+<h3><span class="header-section-number">5.5.7</span> Finance and Insurance</h3>
+<p>Example KPIs for the Finance and Insurance Industry:</p>
+<p><strong>FINANCE </strong></p>
+<ul>
+<li>Accounting costs</li>
+<li>Accounts payable</li>
+<li>Accounts payable turnover</li>
+<li>Asset turnover rate</li>
+<li>Average sum deposited in new deposit accounts</li>
+<li>Average value of past due loans</li>
+<li>Cash conversion cycle (CCC)</li>
+<li>Cash dividends paid</li>
+<li>Cash flow return on investments (CFROI)</li>
+<li>Common stock equity</li>
+<li>Cost of goods sold (COGS)</li>
+<li>Cost per hour per lawyer (in-house)</li>
+<li>Creditor days</li>
+<li>Cumulative annual growth rate (CAGR)</li>
+<li>Cycle time to perform periodic close</li>
+<li>Cycle time to resolve an invoice error</li>
+<li>Days payable</li>
+<li>Debt-to-asset ratio</li>
+<li>Debtor days</li>
+<li>Direct costs</li>
+<li>Earnings per share (EPS)</li>
+<li>EBIT</li>
+<li>EBITDA</li>
+<li>Economic value added</li>
+<li>Enterprise value/takeover value</li>
+<li>Fixed costs</li>
+<li>Gross margin on managed assets</li>
+<li>Gross profit</li>
+<li>Gross profit margin</li>
+<li>Indirect costs</li>
+<li>Interest expense</li>
+<li>Interest on net worth</li>
+<li>Invoicing processing costs</li>
+<li>Labor and management cost</li>
+<li>Labor and management earnings</li>
+<li>Legal staff per size of revenue</li>
+<li>Long-term debt</li>
+<li>Marginal costs</li>
+<li>Market share</li>
+<li>Net change in cash</li>
+<li>Net interest margin</li>
+<li>Net new money</li>
+<li>Net profit</li>
+<li>Net profit margin</li>
+<li>Number of budget deviations</li>
+<li>Number of invoices outstanding</li>
+<li>Number of past due loans</li>
+<li>Operating income</li>
+<li>Operating leverage</li>
+<li>Operating margin</li>
+<li>Operating profit margin</li>
+<li>Other current liabilities</li>
+<li>Other noncurrent liabilities</li>
+<li>Percentage of accuracy of periodic financial reports</li>
+<li>Percentage of effectiveness in payables management</li>
+<li>Percentage of budget deviation relative to total budget</li>
+<li>Percentage of electronic invoices</li>
+<li>Percentage of financial reports issued on time</li>
+<li>Percentage of invoices requiring special payment</li>
+<li>Percentage of invoices under query</li>
+<li>Percentage of legal budget spent outside</li>
+<li>Percentage of low-value invoices</li>
+<li>Percentage of payable invoices without purchase order</li>
+<li>Preferred stock equity</li>
+<li>Product turnover ratio</li>
+<li>Profit</li>
+<li>Profit loss due to theft</li>
+<li>Profit margin</li>
+<li>Profit per product</li>
+<li>Quick ratio</li>
+<li>Rate of return on assets</li>
+<li>Rate of return on equity</li>
+<li>Return on assets</li>
+<li>Return on capital employed (ROCE)</li>
+<li>Return on investment (ROI)</li>
+<li>Return to equity</li>
+<li>Revenue</li>
+<li>Revenue per employee</li>
+<li>Sales per share</li>
+<li>Same store sales</li>
+<li>Selling general and administrative (SG&amp;A) expenses</li>
+<li>Share price</li>
+<li>Shares outstanding</li>
+<li>Sharpe ratio</li>
+<li>Short-term debt</li>
+<li>Sortino ratio</li>
+<li>Systems cost of payroll process as a percentage of total payroll cost</li>
+<li>Tier 1 capital</li>
+<li>Total assets</li>
+<li>Total current liabilities</li>
+<li>Total equity</li>
+<li>Total legal spending as a percentage of revenue</li>
+<li>Total liabilities</li>
+<li>Total of uninvested funds</li>
+<li>Total quantity of new deposit accounts</li>
+<li>Total sum deposited in new deposit accounts</li>
+<li>Total value of past due loans</li>
+<li>Variable costs</li>
+</ul>
+</div>
+<div id="construction" class="section level3">
+<h3><span class="header-section-number">5.5.8</span> Construction</h3>
+<p>Example KPIs for the Construction Industry:</p>
+<ul>
+<li>Number of accidents</li>
+<li>Number of accidents per supplier</li>
+<li>Actual working days versus available working days</li>
+<li>Cash balance - Actual versus baseline</li>
+<li>Change orders - Clients</li>
+<li>Change orders - Project manager</li>
+<li>Client satisfaction - Client-specified criteria</li>
+<li>Client satisfaction product - Standard criteria</li>
+<li>Client satisfaction service - Standard criteria</li>
+<li>Cost for construction</li>
+<li>Cost predictability - Construction</li>
+<li>Cost predictability - Construction (client change orders)</li>
+<li>Cost predictability; Construction (project leader change orders)</li>
+<li>Cost predictability - Design</li>
+<li>Cost predictability - Design and construction cost to rectify defects</li>
+<li>Customer satisfaction level</li>
+<li>Day to day project completion ratio - Actual versus baseline</li>
+<li>Fatalities</li>
+<li>Interest cover (company)</li>
+<li>Labor cost - Actual versus baseline</li>
+<li>Labor cost over project timeline</li>
+<li>Liability ratio (over asset) on current versus completion comparison</li>
+<li>Number of defects</li>
+<li>Outstanding money (project)</li>
+<li>Percentage of equipment downtime</li>
+<li>Percentage of labor downtime</li>
+<li>Percentage of backlogs over project timeline</li>
+<li>Percentage of unapproved change orders</li>
+<li>Productivity (company)</li>
+<li>Profit margin - Actual versus baseline profit margin over project timeline</li>
+<li>Profit predictability (project)</li>
+<li>Profitability (company)</li>
+<li>Quality issues at available for use</li>
+<li>Quality issues at end of defect rectification period</li>
+<li>Ratio of value added (company)</li>
+<li>Repeat business (company)</li>
+<li>Reportable accidents (including fatalities)</li>
+<li>Reportable accidents (non-fatal)</li>
+<li>Return on capital employed (company)</li>
+<li>Return on investment (client)</li>
+<li>Return on value added (company)</li>
+<li>Time for construction</li>
+<li>Time predictability - Construction</li>
+<li>Time predictability - Construction (client change orders)</li>
+<li>Time predictability - Construction (project leader change orders)</li>
+<li>Time predictability - Design</li>
+<li>Time predictability - Design and construction</li>
+<li>Time taken to reach final account (project)</li>
+<li>Time to rectify defects</li>
+</ul>
+</div>
+<div id="it-industry" class="section level3">
+<h3><span class="header-section-number">5.5.9</span> IT Industry</h3>
+<p>Example KPIs for the Information Technology Industry:</p>
+<ul>
+<li>Annual cost per reading</li>
+<li>Average cost per article</li>
+<li>Average cost per subscription</li>
+<li>Average dollars per email sent or delivered</li>
+<li>Average order size</li>
+<li>Average quarter-hour audience</li>
+<li>Average revenue per subscription</li>
+<li>Average time spent listening per user (day/week/month/year)</li>
+<li>Bounce rate</li>
+<li>Click to open rate (number of unique clicks/ number of unique opens)</li>
+<li>Click-through rate</li>
+<li>Click-through rate (CTR)</li>
+<li>Conversion rate</li>
+<li>Conversion rate (number of actions/unique click-throughs)</li>
+<li>Conversion rates</li>
+<li>Cost per broadcast hour</li>
+<li>Cost per consumed (by viewers/listeners) hour</li>
+<li>Cost per customer</li>
+<li>Cost per lead, prospect, or referral</li>
+<li>Cost per production hour</li>
+<li>Cost per viewer/listener</li>
+<li>Cost per visitor</li>
+<li>Cost per action (CPA)</li>
+<li>Cumulative audience sessions</li>
+<li>Delivery rate (emails sent, bounces)</li>
+<li>Gross ratings points</li>
+<li>Life cycle cost per reading</li>
+<li>Local content as a percentage of all content</li>
+<li>Net subscribers (number of subscribers plus new subscribers) -(bounces + unsubscribes)</li>
+<li>Number of broadcast hours per day/week/month/year</li>
+<li>Number of or percentage of spam complaints</li>
+<li>Number of orders, transactions, downloads, or actions</li>
+<li>Open rate</li>
+<li>Output per employee (unique first run broadcast hours by employee for each medium)</li>
+<li>Pay per click (PPC)</li>
+<li>Pay per lead (PPL)</li>
+<li>Pay per sale (PPS)</li>
+<li>Percentage of broadcast hours by genre (news/sports/entertainment, etc.)</li>
+<li>Percentage of overhead (non-direct operating costs) against total expenditure</li>
+<li>Percentage of orders, transactions, downloads, or actions of emails sent or delivered</li>
+<li>Percentage unique clicks on a specific recurring Iink(s)</li>
+<li>Referral rate (“send-to-a-friend”)</li>
+<li>Site stickiness (number of pages visited per visit)</li>
+<li>Subscriber retention (number of subscribers, bounces, unsubscribes/number of subscribers)</li>
+<li>Total cost per subscription</li>
+<li>Total listener hours (day/week/month/year)</li>
+<li>Total revenue</li>
+<li>Total revenue per subscription</li>
+<li>Unique visitors (total number of unique visitors per day/week/month)</li>
+<li>Unsubscribe rate</li>
+<li>Utilization of production resources</li>
+<li>Value per visitor</li>
+<li>Viewers/listeners for each medium as a percentage of total population</li>
+<li>Website actions (number of visits to a specific web page or pages)</li>
+<li>Website traffic (total page impressions per day/week/month)</li>
+</ul>
+</div>
+</div>
+<div id="by-business-goal" class="section level2">
+<h2><span class="header-section-number">5.6</span> By Business Goal</h2>
+<p>When it comes to improving on specific business goals, KPI got you covered.</p>
+<div id="improve-response-time" class="section level3">
+<h3><span class="header-section-number">5.6.1</span> Improve response time</h3>
+<p>Goals: Improve representative overall efficiency.</p>
+<div class="figure">
+<img src="call.png" />
+
+</div>
+</div>
+<div id="increase-profit-margins" class="section level3">
+<h3><span class="header-section-number">5.6.2</span> Increase profit margins</h3>
+<p>Goals:</p>
+<ul>
+<li>Allow the CFO of the company to compare the net profit margin over time and relative to other companies in the same sector.</li>
+<li>Allow investors to compare the net profit margin across industries to identify the most profitable and attractive sectors and companies to invest in</li>
+</ul>
+<div class="figure">
+<img src="increaseprofit.png" />
+
+</div>
+</div>
+<div id="optimize-campaigns" class="section level3">
+<h3><span class="header-section-number">5.6.3</span> Optimize campaigns</h3>
+<p>Goals: Increase sales originating from our online marketing activity.</p>
+<div class="figure">
+<img src="campaigns.png" />
+
+</div>
+</div>
+</div>
+<div id="by-department" class="section level2">
+<h2><span class="header-section-number">5.7</span> By Department</h2>
+<div id="sales" class="section level3">
+<h3><span class="header-section-number">5.7.1</span> Sales</h3>
+<p>Example KPIs for Sales Departments:</p>
+<ul>
+<li>Actual calls</li>
+<li>Actual sales value versus initial bid</li>
+<li>Age of sales forecast</li>
+<li>Average administrative time per sales person</li>
+<li>Average deal size</li>
+<li>Average number of activities (calls, meetings, etc.) to close a deal</li>
+<li>Average price discount per product</li>
+<li>Average price discount per sales person</li>
+<li>Average revenue per product</li>
+<li>Call quota</li>
+<li>Closed sales</li>
+<li>Closing ratio</li>
+<li>Customer acquisitions costs as a percentage of sales value</li>
+<li>Customer churn ratio</li>
+<li>Customer loyalty</li>
+<li>Customer purchase frequency</li>
+<li>Customer satisfaction</li>
+<li>Frequency of sales transactions</li>
+<li>Gross margin per product</li>
+<li>Gross margin per sales person</li>
+<li>New sales person ramp-up time</li>
+<li>Number of certified partners</li>
+<li>Number of deals per partner</li>
+<li>Number of sales orders by FTE</li>
+<li>Number of sales people meeting their quota</li>
+<li>Number of units sold per day/week/month/quarter/year</li>
+<li>Partner churn ratio</li>
+<li>Partner profit margin</li>
+<li>Percentage of converted opportunities</li>
+<li>Percentage of online sales revenue</li>
+<li>Percentage of sales due to launched product/services</li>
+<li>Percentage of sales representatives to achieve quota</li>
+<li>Percentage of sales revenue via partner channel</li>
+<li>Pipeline by sales stage</li>
+<li>Qualified leads</li>
+<li>Qualified opportunities</li>
+<li>Revenue per sales person</li>
+<li>Sales capacity</li>
+<li>Sales cycle time</li>
+<li>Sales per department</li>
+<li>Sales person turnover</li>
+<li>Sales quota</li>
+<li>Time utilization</li>
+<li>Unweighted sum of deal size in sales pipeline</li>
+<li>Value of sales lost</li>
+<li>Win/loss ratio percentage</li>
+</ul>
+</div>
+<div id="marketing" class="section level3">
+<h3><span class="header-section-number">5.7.2</span> Marketing</h3>
+<p>Example KPIs for Marketing Departments:</p>
+<ul>
+<li>Ad click-through ratio (CTR)</li>
+<li>Average response rates of campaigns</li>
+<li>Brand awareness percentage</li>
+<li>Brand consideration</li>
+<li>Brand credibility</li>
+<li>Brand strength</li>
+<li>Column inches of media coverage</li>
+<li>Consumer awareness</li>
+<li>Contact rate (number of contacts effectively contacted / number of contacts in the target list)</li>
+<li>Cost per converted lead</li>
+<li>Cost per lead</li>
+<li>Cost per mille (CPM)</li>
+<li>Delivery of materials</li>
+<li>Effective reach</li>
+<li>Gross rating point (GRP)</li>
+<li>Growth sustainability rate of brand</li>
+<li>Leads generated</li>
+<li>Marketing budget awareness-demand ratio</li>
+<li>Marketing budget ratio (MER)</li>
+<li>Number of article placements in trade magazines</li>
+<li>Number of client visits</li>
+<li>Number of product focus groups conducted</li>
+<li>Number of customer satisfaction surveys administered</li>
+<li>Number of placements in trade magazines</li>
+<li>Number of trade shows attended / participated in</li>
+<li>Percentage of customers willing to promote your product/service</li>
+<li>Q score (a way to measure the familiarity and appeal of a brand, etc.)</li>
+<li>Response rate</li>
+<li>Return on investment (ROI) of brand</li>
+<li>Return on marketing investment (ROMI)</li>
+<li>Revenue generation capabilities of brand</li>
+<li>Staying in budget</li>
+<li>Target rating point</li>
+<li>Total cost of customer acquisition</li>
+<li>Transaction value of brand</li>
+<li>Website click-throughs</li>
+<li>Website hits</li>
+<li>Website leads generated</li>
+</ul>
+</div>
+<div id="finance" class="section level3">
+<h3><span class="header-section-number">5.7.3</span> Finance</h3>
+<p>Example KPIs for Finance Departments:</p>
+<ul>
+<li>Accounting costs</li>
+<li>Accounts payable turnover</li>
+<li>Accounts receivable collection period</li>
+<li>Accounts receivable turnover</li>
+<li>Actual expenses</li>
+<li>Amount due (per customer)</li>
+<li>Average customer receivable</li>
+<li>Average monetary value of invoices outstanding</li>
+<li>Average monetary value of overdue invoices</li>
+<li>Average number of trackbacks per post</li>
+<li>Budget variance for each key metric</li>
+<li>Budgeted expenses</li>
+<li>Capital expenditures</li>
+<li>Cash conversion cycle (CCC)</li>
+<li>Cash flow return on investments (CFROI)</li>
+<li>Cost of goods sold (COGS)</li>
+<li>Cash dividends paid</li>
+<li>Cost per pay slip issued</li>
+<li>Creditor days</li>
+<li>Current receivables</li>
+<li>Cumulative annual growth rate (CAGR)</li>
+<li>Cycle time for expense reimbursements</li>
+<li>Cycle time to process payroll</li>
+<li>Cycle time to resolve an invoice error</li>
+<li>Cycle time to resolve payroll errors</li>
+<li>Days payable</li>
+<li>Debtor days</li>
+<li>Direct cost</li>
+<li>Discounted cash flow</li>
+<li>Earnings before interest and taxes (EBIT)</li>
+<li>Earnings before interest, taxes, depreciation (EBITDA)</li>
+<li>Economic value added (EVA)</li>
+<li>Employee available time</li>
+<li>Employee scheduled time</li>
+<li>Employee work center loading</li>
+<li>Enterprise value/ takeover value</li>
+<li>Expense account credit transactions</li>
+<li>Expense account debit transactions</li>
+<li>Expense account transactions</li>
+<li>Fixed costs</li>
+<li>Gross profit</li>
+<li>Gross profit margin</li>
+<li>Indirect costs</li>
+<li>Inventory turnover</li>
+<li>Inventory value</li>
+<li>Invoice processing costs</li>
+<li>Internal rate of return (IRR)</li>
+<li>Market share gain comparison percentage</li>
+<li>Net change in cash</li>
+<li>Net income</li>
+<li>Net present value (NPV)</li>
+<li>Number of invoices outstanding</li>
+<li>Number of unapplied receipts</li>
+<li>Number of past-due loans</li>
+<li>Open receivables</li>
+<li>Open receivables amount (per customer)</li>
+<li>Operating leverage</li>
+<li>Past-due receivables</li>
+<li>Payables turnover</li>
+<li>Payment errors as a percentage of total payroll disbursement</li>
+<li>Percentage accuracy of financial reports</li>
+<li>Percentage of bad debts against invoiced revenue</li>
+<li>Percentage of electronic invoices</li>
+<li>Percentage in dispute (per customer)</li>
+<li>Percentage of invoices being queried</li>
+<li>Percentage of invoices requiring special payment</li>
+<li>Percentage of low-value invoices</li>
+<li>Percentage of open receivables (per customer)</li>
+<li>Percentage of payable invoices without purchase order</li>
+<li>Percentage of service requests posted via web (self-help)</li>
+<li>Perfect order measure</li>
+<li>Quick ratio</li>
+<li>Receivables</li>
+<li>Receivables turnover</li>
+<li>Return on capital employed (ROCE)</li>
+<li>Sales growth</li>
+<li>Share price</li>
+<li>Systems cost of payroll process as a percentage of total payroll cost</li>
+<li>Total payables</li>
+<li>Total energy used per unit of production</li>
+<li>Total receivables</li>
+<li>Total sales</li>
+<li>Unapplied receipts</li>
+<li>Variable costs</li>
+<li>Weighted days delinquent sales outstanding</li>
+<li>Weighted days delinquent sales outstanding (per customer)</li>
+<li>Weighted terms outstanding</li>
+<li>Weighted terms outstanding (per customer)</li>
+</ul>
+</div>
+<div id="human-resources" class="section level3">
+<h3><span class="header-section-number">5.7.4</span> Human Resources</h3>
+<p>Example KPIs for Human Resources (HR) Departments:</p>
+<ul>
+<li>Actual versus budgeted cost of hire</li>
+<li>Annualized voluntary employee turnover rate</li>
+<li>Annualized voluntary turnover rate</li>
+<li>Average headcount of employees each human resources (HR) employee working is caring for</li>
+<li>Average interviewing costs</li>
+<li>Average length of placement in months for the manager</li>
+<li>Average length of service of all current employees</li>
+<li>Average length of service of all employees who have separated</li>
+<li>Average months placement</li>
+<li>Average number of training hours per employee</li>
+<li>Average number of vacation days per employee</li>
+<li>Average performance scores of departing employees</li>
+<li>Average retirement age</li>
+<li>Average salary</li>
+<li>Average salary for all employees reporting to the selected manager</li>
+<li>Average sourcing cost per hire</li>
+<li>Average time employees are in same job/ function</li>
+<li>Average time to competence</li>
+<li>Average time to update employee records</li>
+<li>Average training costs per employee</li>
+<li>Compensation cost as a percentage of revenue</li>
+<li>Contingent workers</li>
+<li>Employee satisfaction with training</li>
+<li>End placements</li>
+<li>Female to male ratio</li>
+<li>Full-time employees (FTEs) per human resources (HR) department FTE</li>
+<li>Headcount of contingent workers for the manager</li>
+<li>HR average years of service (incumbents)</li>
+<li>HR average years of service (terminations)</li>
+<li>HR department cost per FTE</li>
+<li>HR headcount - Actual</li>
+<li>HR headcount - Available</li>
+<li>HR to employee staff ratio</li>
+<li>Job vacancies as a percentage of all positions</li>
+<li>New hire quality</li>
+<li>Time to fill</li>
+<li>Hiring manager satisfaction</li>
+<li>Cost per hire</li>
+<li>Staffing efficiency</li>
+<li>Internal, external, and total headcount recruiting costs and ratios</li>
+<li>Number of end placements made in the reporting period for the manager</li>
+<li>Part-time employees as a percentage of total employees</li>
+<li>Percentage of employees receiving regular performance reviews</li>
+<li>Percentage of employees that are near or at max for their vacation balances</li>
+<li>Percentage of HR budget spent on training</li>
+<li>Percentage of new hire retention</li>
+<li>Ratio of internal versus external training</li>
+<li>Ratio of standard level wage to local minimum wage</li>
+<li>Return on investment (ROI) of training</li>
+<li>Total overtime hours as a percentage of all work hours</li>
+<li>Training penetration rate (percentage of employees completing a course compared to all FTEs)</li>
+<li>Workforce stability</li>
+</ul>
+</div>
+<div id="information-technology" class="section level3">
+<h3><span class="header-section-number">5.7.5</span> Information Technology</h3>
+<p>Example KPIs for Information Technology (IT) Departments:</p>
+<ul>
+<li>Account create success</li>
+<li>Account termination success</li>
+<li>Active directory performance index</li>
+<li>Alert-to-ticket ratio</li>
+<li>Average data center availability</li>
+<li>Call center PBX availability</li>
+<li>Campus PBX availability</li>
+<li>Customer connection effectiveness</li>
+<li>Data center capacity consumed</li>
+<li>Email client availability</li>
+<li>Exchange server availability</li>
+<li>Incidents from change</li>
+<li>Internet proxy performance</li>
+<li>Network availability - High availability sites</li>
+<li>Network availability - Standard sites</li>
+<li>Network manageability index</li>
+<li>No problem found/duplicate tickets</li>
+<li>Percentage of branch office backup success</li>
+<li>Percentage of circuits exceeding target utilization</li>
+<li>Percentage of IT managed servers patched at deadline</li>
+<li>Percentage of production servers meeting software configuration standards</li>
+<li>Percentage of security update restarts within maintenance window</li>
+<li>Percentage successful remote access server (RAS) connections</li>
+<li>Phone answer service level</li>
+<li>Priority 1 and priority 2 network incidents meeting SLA</li>
+<li>Product adoption status and compliance</li>
+<li>Restore success rate</li>
+<li>Server growth rate</li>
+<li>Server manageability index</li>
+<li>Service desk client satisfaction - Percentage dissatisfied</li>
+<li>Service desk tier 1 resolution rate</li>
+<li>Service desk time to escalate</li>
+<li>Service desk time to resolve</li>
+<li>Storage utility service availability</li>
+<li>Storage utility utilization</li>
+<li>Virtual machine provisioning interval</li>
+<li>Virtual server utility availability</li>
+<li>Web server availability</li>
+</ul>
+</div>
+<div id="customer-service" class="section level3">
+<h3><span class="header-section-number">5.7.6</span> Customer Service</h3>
+<p>Example KPIs for Customer Service Departments</p>
+<ul>
+<li>Agent’s full-time employees (FTEs) as percentage of total call center FTEs</li>
+<li>Answering percentage (number of sales calls answered/total number of sales calls offered)</li>
+<li>Average after-call work time</li>
+<li>Average number of calls/ service request per handler</li>
+<li>Average queue time of incoming phone calls</li>
+<li>Cost per minute of handle time</li>
+<li>Costs of operating call center/ service desk</li>
+<li>Email backlog</li>
+<li>Field service technician utilization</li>
+<li>Hit rate (products sold compared to total received sales calls)</li>
+<li>Inbound abandon rate</li>
+<li>Inbound agent dialed calls</li>
+<li>Inbound availability rate</li>
+<li>Inbound average talk time</li>
+<li>Inbound average wrap time</li>
+<li>Inbound call center leads created</li>
+<li>Inbound call center opportunities created</li>
+<li>Inbound calls handled</li>
+<li>Inbound calls handled per agent hour</li>
+<li>Inbound service level</li>
+<li>Number of complaints</li>
+<li>Percentage of customer service requests answered in given timeframe</li>
+<li>Percentage of calls transferred</li>
+<li>Total calling time per day/week/month</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="terminology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deutsche-bahn-use-case.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
